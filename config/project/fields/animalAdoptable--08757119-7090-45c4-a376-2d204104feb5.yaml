@@ -1,0 +1,13 @@
+contentColumnType: boolean
+fieldGroup: fa0ada94-3ad1-41b9-8463-7b4a41f9fe27 # Animals
+handle: animalAdoptable
+instructions: ''
+name: Adoptable
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

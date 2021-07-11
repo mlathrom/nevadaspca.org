@@ -1,0 +1,36 @@
+fieldLayouts:
+  39e5909d-9e69-4098-a416-8442451bf7fd:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: bff3f469-d94b-4f4b-a707-7f7ac7be44cb # Facebook
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e0e8b34a-3359-45d0-bc0f-3a841fd3dcff # Instagram
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 22e34aaa-d6db-4ea4-b6d2-1caf23512467 # Twitter
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Default
+        sortOrder: 1
+handle: social
+name: Social

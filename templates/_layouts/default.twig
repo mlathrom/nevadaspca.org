@@ -1,0 +1,103 @@
+{# --------------------------------- #}
+{# Layout template
+{# --------------------------------- #}
+
+<!doctype html>
+<html class="no-js" lang="en-us" prefix="og: http://ogp.me/ns#">
+<head>
+  {%- minify -%}
+    {# Google Tag Manager #}
+    {% if not craft.app.config.general.devMode %}
+      <script>(function(w,d,s,l,i,h,c){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NKBL38J');</script>
+    {% endif %}
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{% if title is defined %}{{ title }} | {% endif %}{{ seo.seoTitle }}</title>
+
+    <link rel="home" href="{{ siteUrl }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="alternate" href="{{ url(craft.app.request.pathInfo) }}" hreflang="en-us">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="{{ seo.seoTitle }}">
+    
+    {# Site icons  #}
+    {% include "_partials/head-icons" %}
+    
+    {# Seo  #}
+    {% include "_partials/head-seo" %}
+    
+    {% block seo %}
+      <!-- Structured Data -->
+      <script type='application/ld+json'>
+        {
+          "@context": "http://schema.org",
+          "@type": "WebSite",
+          "url": "{{ siteUrl }}",
+          "image": "{{ siteUrl }}img/logo-icon.png",
+          "name": "=",
+          "description": "=.",
+          "sameAs": [
+            "social.twitterProfile",
+            "social.facebookProfile",
+            "social.pinterestProfile"
+          ]
+        }
+      </script>
+
+      <!-- Standard SEO -->
+      <meta name="description" content="{{ seo.seoDescription }}">
+
+      <!-- Facebook OpenGraph -->
+      <meta property="og:description" content="">
+      <meta property="og:image" content="{{ siteUrl }}img/share-card.png">
+      <meta property="og:image:type" content="image/png">
+      <meta property="og:image:width" content="1120">
+
+      <!-- Twitter Card -->
+      <meta name="twitter:description" content="">
+      <meta name="twitter:image" content="{{ siteUrl }}img/share-card.png">
+      
+      <style>
+        @font-face {
+          src: url('/assets/fonts/NunitoVFBeta.woff2') format('woff2-variations');
+          font-family:'Nunito VF';
+          font-style: normal;
+        }
+      </style>
+      
+    {% endblock %}
+    
+    {% block headInsert %}{% endblock %}
+  {%- endminify -%}
+</head>
+<body class="site-body bg-brand-peach">
+  {%- minify -%}
+  
+    {% include "_modules/svg" %}
+    
+    {% include "_partials/header" %}
+    
+    <div class="site-container bg-white notch-l notch-r">
+      <main class="site-main" role="main">
+        {% block content %}
+          <p>Insert Content</p>
+        {% endblock %}
+      </main>
+      {% include "_partials/footer" %}
+    </div>
+
+    {{ craft.vite.script('/src/js/app.js') }}
+    
+    {% block footInsert %}
+    {% endblock %}
+
+  {%- endminify -%}
+</body>
+</html>

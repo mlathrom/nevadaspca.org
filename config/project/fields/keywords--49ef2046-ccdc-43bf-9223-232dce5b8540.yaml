@@ -1,0 +1,22 @@
+contentColumnType: string
+fieldGroup: 7b386fd3-3446-443b-a78e-7ccbab721caf # Common
+handle: keywords
+instructions: ''
+name: Keywords
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  limit: null
+  localizeRelations: false
+  selectionLabel: 'Add a keyword'
+  showSiteMenu: false
+  source: null
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Tags

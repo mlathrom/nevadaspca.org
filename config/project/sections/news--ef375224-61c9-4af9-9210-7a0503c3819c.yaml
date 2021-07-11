@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: news
+name: News
+propagationMethod: all
+siteSettings:
+  051a9101-1abd-4824-aa44-5e9ff5172a13: # Nevada SPCA
+    enabledByDefault: true
+    hasUrls: true
+    template: articles/_entry
+    uriFormat: 'news/{slug}'
+type: channel

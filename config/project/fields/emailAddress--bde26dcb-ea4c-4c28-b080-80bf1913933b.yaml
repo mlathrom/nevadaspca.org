@@ -1,0 +1,11 @@
+contentColumnType: string
+fieldGroup: 7b386fd3-3446-443b-a78e-7ccbab721caf # Common
+handle: emailAddress
+instructions: ''
+name: 'Email Address'
+searchable: false
+settings:
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Email

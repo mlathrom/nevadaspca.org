@@ -1,0 +1,13 @@
+contentColumnType: string
+fieldGroup: 7b386fd3-3446-443b-a78e-7ccbab721caf # Common
+handle: tags
+instructions: ''
+name: Tags
+searchable: '1'
+settings:
+  localizeRelations: false
+  selectionLabel: ''
+  source: 'taggroup:02c2a7e4-93ba-45c0-a465-a784dce64447'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Tags

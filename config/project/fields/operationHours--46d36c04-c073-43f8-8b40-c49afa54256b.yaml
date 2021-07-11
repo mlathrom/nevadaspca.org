@@ -1,0 +1,32 @@
+contentColumnType: text
+fieldGroup: 7b386fd3-3446-443b-a78e-7ccbab721caf # Common
+handle: operationHours
+instructions: ''
+name: 'Operation Hours'
+searchable: false
+settings:
+  slots:
+    __assoc__:
+      -
+        - open
+        -
+          __assoc__:
+            -
+              - name
+              - 'Opening Time'
+            -
+              - handle
+              - open
+      -
+        - close
+        -
+          __assoc__:
+            -
+              - name
+              - 'Closing Time'
+            -
+              - handle
+              - close
+translationKeyFormat: null
+translationMethod: none
+type: craft\storehours\Field

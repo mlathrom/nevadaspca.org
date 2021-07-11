@@ -1,0 +1,41 @@
+contentColumnType: string
+fieldGroup: 7b386fd3-3446-443b-a78e-7ccbab721caf # Common
+handle: facebook
+instructions: ''
+name: Facebook
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - 483b8056-5bca-4826-b935-bb73bf760856 # Profile
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - c2a110e9-a17f-4af1-be6d-ff057ec72fc2 # Profile Url
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 5766f15e-9f6b-4d2c-a83a-8fd7336d161e # App Id
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_facebook}}'
+  fieldLayout: row
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: '1'
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

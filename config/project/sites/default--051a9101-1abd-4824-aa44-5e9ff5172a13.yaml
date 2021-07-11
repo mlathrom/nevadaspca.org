@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: 'Nevada SPCA'
+primary: true
+siteGroup: d1cc1039-ebc5-4242-87fe-de37c05297bb # Nevada SPCA
+sortOrder: 1

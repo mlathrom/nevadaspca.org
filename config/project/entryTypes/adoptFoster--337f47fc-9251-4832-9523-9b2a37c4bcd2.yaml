@@ -1,0 +1,38 @@
+fieldLayouts:
+  a7e81ce7-9825-44df-9089-ea74114c60b2:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: adoptFoster
+hasTitleField: false
+name: 'Adopt & Foster'
+section: c37d56bf-2c6d-4dc5-9f3c-43132184ea47 # Adopt & Foster
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

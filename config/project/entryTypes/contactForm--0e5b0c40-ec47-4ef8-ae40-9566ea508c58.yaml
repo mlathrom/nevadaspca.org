@@ -1,0 +1,78 @@
+fieldLayouts:
+  40b9f634-377d-4c67-9b00-13e0036c1ac2:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3c53487a-8c2d-492c-bdab-e70152df4bf8 # Full Name
+            instructions: ''
+            label: Name
+            required: ''
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            fieldUid: bde26dcb-ea4c-4c28-b080-80bf1913933b # Email Address
+            instructions: ''
+            label: Email
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 776b316a-f531-4e22-95f0-04bc23165574 # Subject
+            instructions: ''
+            label: Subject
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            type: craft\fieldlayoutelements\HorizontalRule
+          -
+            fieldUid: be72df5e-4b83-4d84-b617-a06fce90bd68 # Message
+            instructions: ''
+            label: Message
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: contactForm
+hasTitleField: false
+name: 'Contact Form'
+section: 9893f910-16e9-4593-93ce-b144a9dc2b30 # Contact Form
+sortOrder: 1
+titleFormat: '{postDate|date(''U'')} - {formEmail}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

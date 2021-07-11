@@ -1,0 +1,42 @@
+{% header "Content-Type: text/xml" %}
+
+{% set scripts = craft.entries().section('Scripts').all() %}
+{% set writers = craft.entries().section('Writers').all() %}
+{% set scriptCategories =  craft.categories.group('scriptCategories').all() %}
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>{{ siteUrl }}</loc>
+        <lastmod>2017-10-10</lastmod>
+        <changefreq>Monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>{{ siteUrl }}articles</loc>
+        <lastmod>2018-05-26</lastmod>
+        <changefreq>Yearly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>{{ siteUrl }}about</loc>
+        <lastmod>2018-05-26</lastmod>
+        <changefreq>Yearly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>{{ siteUrl }}contact</loc>
+        <lastmod>2018-05-26</lastmod>
+        <changefreq>Yearly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    {% for article in articles %}
+    <url>
+        <loc>{{ page.url }}</loc>
+        <lastmod>{{ page.dateUpdated|date('Y-m-d') }}</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    {% endfor %}
+    {% for page in writers %}
+{% endfor %}
+</urlset>

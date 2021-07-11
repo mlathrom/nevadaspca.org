@@ -1,0 +1,7 @@
+.notch-l {
+  padding-left: env(safe-area-inset-left);
+}
+
+.notch-r {
+  padding-right: env(safe-area-inset-right);
+}

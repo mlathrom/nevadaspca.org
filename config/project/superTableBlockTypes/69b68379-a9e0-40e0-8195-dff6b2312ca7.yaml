@@ -1,0 +1,61 @@
+field: 22e34aaa-d6db-4ea4-b6d2-1caf23512467 # Twitter
+fieldLayouts:
+  15927256-74ad-4458-8a49-049b170db9a9:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: f4d43acb-9fe1-41ad-ad1b-970579888c43 # Profile
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ddd70a29-0997-4029-b2ee-5c58dc865dd3 # Profile Url
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  ddd70a29-0997-4029-b2ee-5c58dc865dd3: # Profile Url
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: profileUrl
+    instructions: 'Link to your profile page'
+    name: 'Profile Url'
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: null
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  f4d43acb-9fe1-41ad-ad1b-970579888c43: # Profile
+    contentColumnType: text
+    fieldGroup: null
+    handle: profile
+    instructions: 'Your profile handle excluding the @ symbol'
+    name: Profile
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText

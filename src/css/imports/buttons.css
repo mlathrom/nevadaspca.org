@@ -1,0 +1,21 @@
+/**
+ * buttons.css
+ *
+ * Styling for site buttons.
+ *
+ */
+
+/**
+ * Standard Buttons
+ */
+.btn {
+  @apply text-lg px-6 rounded shadow-none tracking-wide transform transition-all duration-75 font-black h-12 inline-flex justify-center items-center;
+
+  &:active {
+    @apply scale-95;
+  }
+
+  svg {
+    @apply fill-current;
+  }
+}

@@ -1,0 +1,7 @@
+{% extends '_layouts/email-default' %}
+
+{% block content %}
+  {% if email.defaultBody|length %}
+    <p>{{ email.defaultBody|markdown }}</p>
+  {% endif %}
+{% endblock %}

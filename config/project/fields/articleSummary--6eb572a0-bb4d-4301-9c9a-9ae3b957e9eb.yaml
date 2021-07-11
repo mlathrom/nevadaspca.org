@@ -1,0 +1,18 @@
+contentColumnType: string(360)
+fieldGroup: 7b386fd3-3446-443b-a78e-7ccbab721caf # Common
+handle: articleSummary
+instructions: ''
+name: 'Article Summary'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 90
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

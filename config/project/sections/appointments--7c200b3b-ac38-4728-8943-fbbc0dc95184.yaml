@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: appointments
+name: Appointments
+propagationMethod: all
+siteSettings:
+  051a9101-1abd-4824-aa44-5e9ff5172a13: # Nevada SPCA
+    enabledByDefault: true
+    hasUrls: true
+    template: appointments/_entry
+    uriFormat: 'adopt-foster/appointments/{slug}'
+type: channel

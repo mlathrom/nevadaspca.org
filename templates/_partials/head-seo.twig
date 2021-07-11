@@ -1,0 +1,23 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="robots" content="index">
+<meta name="keywords" content="{{ seo.seoDescription }}">
+<meta name="geo.placename" content="United States">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_us">
+<meta property="og:url" content="{{ url(craft.app.request.pathInfo) }}">
+<meta property="og:title" content="{% if title is defined %}{{ title }} | {% endif %}{{ seo.seoTitle }}">
+<meta property="og:site_name" content="{{ siteName }}">
+
+{% if social.facebook %}
+<meta property="fb:app_id" content="{{ social.facebook.appId }}">
+{% endif %}
+
+{% if social.twitter %}
+<meta property="og:see_also" content="https://www.twitter.com/{{ social.twitter.profile }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@{{ social.twitter.profileUrl }}">
+<meta name="twitter:creator" content="@{{ social.twitter.profileUrl }}">
+<meta name="twitter:title" content="{% if title is defined %}{{ title }} | {% endif %}{{ seo.seoTitle }}">
+{% endif %}

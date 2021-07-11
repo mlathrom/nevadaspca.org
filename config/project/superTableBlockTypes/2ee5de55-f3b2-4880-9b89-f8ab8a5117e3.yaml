@@ -1,0 +1,170 @@
+field: b83ad75f-4385-4657-bd13-379a5ae5ad78 # Appointment Hours
+fieldLayouts:
+  936d9d46-cd44-4744-a398-d2ccb4203401:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 89d91cb0-0f5c-467e-8403-fcc52a260e3d # Sunday
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1118f2fc-efb2-4a0b-b341-ee4a93af65d0 # Monday
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6263e1d9-629b-4c85-97d3-88b6efb4f74c # Tuesday
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f5237693-31e7-435e-a3c3-e782195ddbef # Wednesday
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 432d950f-d1f7-4357-8cc3-6cf2a1c614d3 # Thursday
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0c911647-3d1a-42d6-835e-da4ff1d220f3 # Friday
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 88c1de4b-520d-4dc5-a3fe-d9a460f9e97d # Saturday
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0c911647-3d1a-42d6-835e-da4ff1d220f3: # Friday
+    contentColumnType: time
+    fieldGroup: null
+    handle: friday
+    instructions: ''
+    name: Friday
+    searchable: false
+    settings:
+      max: null
+      min: null
+      minuteIncrement: 30
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Time
+  88c1de4b-520d-4dc5-a3fe-d9a460f9e97d: # Saturday
+    contentColumnType: time
+    fieldGroup: null
+    handle: saturday
+    instructions: ''
+    name: Saturday
+    searchable: false
+    settings:
+      max: null
+      min: null
+      minuteIncrement: 30
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Time
+  89d91cb0-0f5c-467e-8403-fcc52a260e3d: # Sunday
+    contentColumnType: time
+    fieldGroup: null
+    handle: sunday
+    instructions: ''
+    name: Sunday
+    searchable: false
+    settings:
+      max: null
+      min: null
+      minuteIncrement: 30
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Time
+  432d950f-d1f7-4357-8cc3-6cf2a1c614d3: # Thursday
+    contentColumnType: time
+    fieldGroup: null
+    handle: thursday
+    instructions: ''
+    name: Thursday
+    searchable: false
+    settings:
+      max: null
+      min: null
+      minuteIncrement: 30
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Time
+  1118f2fc-efb2-4a0b-b341-ee4a93af65d0: # Monday
+    contentColumnType: time
+    fieldGroup: null
+    handle: monday
+    instructions: ''
+    name: Monday
+    searchable: false
+    settings:
+      max: null
+      min: null
+      minuteIncrement: 30
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Time
+  6263e1d9-629b-4c85-97d3-88b6efb4f74c: # Tuesday
+    contentColumnType: time
+    fieldGroup: null
+    handle: tuesday
+    instructions: ''
+    name: Tuesday
+    searchable: false
+    settings:
+      max: null
+      min: null
+      minuteIncrement: 30
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Time
+  f5237693-31e7-435e-a3c3-e782195ddbef: # Wednesday
+    contentColumnType: time
+    fieldGroup: null
+    handle: wednesday
+    instructions: ''
+    name: Wednesday
+    searchable: false
+    settings:
+      max: null
+      min: null
+      minuteIncrement: 30
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Time

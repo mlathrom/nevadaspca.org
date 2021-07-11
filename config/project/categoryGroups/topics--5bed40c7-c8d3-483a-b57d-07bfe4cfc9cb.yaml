@@ -1,0 +1,40 @@
+fieldLayouts:
+  e7cdd565-b3d2-41cd-876c-0721b915abd9:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: topics
+name: Topics
+siteSettings:
+  051a9101-1abd-4824-aa44-5e9ff5172a13: # Nevada SPCA
+    hasUrls: true
+    template: null
+    uriFormat: 'news/topics/{slug}'
+structure:
+  maxLevels: null
+  uid: 74b2a79a-aa8b-438e-830f-11dde69d00ff

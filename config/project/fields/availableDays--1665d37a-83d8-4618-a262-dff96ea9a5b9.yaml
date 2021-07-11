@@ -1,0 +1,89 @@
+contentColumnType: string
+fieldGroup: 7b386fd3-3446-443b-a78e-7ccbab721caf # Common
+handle: availableDays
+instructions: ''
+name: 'Available Days'
+searchable: false
+settings:
+  multi: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Sunday
+        -
+          - value
+          - sunday
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Monday
+        -
+          - value
+          - monday
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Tuesday
+        -
+          - value
+          - tuesday
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Wednesday
+        -
+          - value
+          - wednesday
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Thursday
+        -
+          - value
+          - thursday
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Friday
+        -
+          - value
+          - friday
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Saturday
+        -
+          - value
+          - saturday
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Checkboxes

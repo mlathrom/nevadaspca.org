@@ -1,0 +1,34 @@
+contentColumnType: string
+fieldGroup: 7b386fd3-3446-443b-a78e-7ccbab721caf # Common
+handle: twitter
+instructions: ''
+name: Twitter
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - f4d43acb-9fe1-41ad-ad1b-970579888c43 # Profile
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - ddd70a29-0997-4029-b2ee-5c58dc865dd3 # Profile Url
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_twitter}}'
+  fieldLayout: row
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: '1'
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

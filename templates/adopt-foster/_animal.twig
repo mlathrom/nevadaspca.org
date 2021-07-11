@@ -1,0 +1,13 @@
+{# --------------------------------- #}
+{# Adopt Foster Animal template
+{# --------------------------------- #}
+
+{% extends '_layouts/default' %}
+
+{% block content %}
+  {% import '_macros/animals' as animals %}
+
+  <div class="flex flex-wrap -m-4 font-normal">
+    {{ animals.getAnimals(slug) }}
+  </div>
+{% endblock %}

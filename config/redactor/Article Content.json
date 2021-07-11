@@ -1,0 +1,13 @@
+{
+    "buttons": [
+        "formatting",
+        "bold",
+        "italic",
+        "underline",
+        "unorderedlist",
+        "orderedlist",
+        "link",
+        "video"
+    ],
+    "toolbarFixed": true
+}

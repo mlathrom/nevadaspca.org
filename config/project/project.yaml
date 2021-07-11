@@ -1,0 +1,79 @@
+dateModified: 1625791664
+email:
+  fromEmail: mlathrom@gmail.com
+  fromName: 'Nevada SPCA'
+  transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  feed-me:
+    edition: standard
+    enabled: true
+    schemaVersion: 4.3.0
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: 633DZ1C9EWNKVE7SL887MZPL
+    schemaVersion: 1.1.11
+  guest-entries:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.1.0
+  guest-entries-honeypot:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  knock-knock:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.1.1
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  preparse-field:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.5
+  queue-manager:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  shelter-manager:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  sprout-email:
+    edition: lite
+    enabled: true
+    schemaVersion: 4.4.4
+  sprout-fields:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.5.3
+  store-hours:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.2
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.2.1
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Nevada SPCA'
+  schemaVersion: 3.6.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

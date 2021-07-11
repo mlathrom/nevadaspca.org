@@ -1,0 +1,49 @@
+{% import '_macros/helpers' as helpers %}
+
+<footer class="site-footer bg-brand-peach p-4">
+  <div class="site-footer-container">
+    <div class="md:flex md:justify-center">
+      <div class="text-center md:w-1/3">
+        <h2 class="text-xl mb-2">
+          Visit Us
+        </h2>Monday - Saturday<br />
+        10am - 4pm<br />
+        Closed Sundays
+      </div>
+      <div class="text-center md:w-1/3">
+        <h2 class="text-xl mb-2">
+          Find Us
+        </h2>
+        <address class="not-italic">
+          {{ companyInfo.addressLine1 }}<br />
+          {{ companyInfo.city }}, {{ companyInfo.state|capitalize }} {{
+            companyInfo.zipCode
+          }}<br />
+        </address>
+      </div>
+      <div class="text-center md:w-1/3">
+        <h2 class="text-xl mb-2">
+          Contact Us
+        </h2>
+        <a href="tel:{{ companyInfo.phone }}">
+          {{ helpers.phone(companyInfo.phone) }}
+        </a><br />
+        <a href="{{ url('contact') }}" class="underline">Email Us</a>
+      </div>
+      <div></div>
+      <a href="{{ url('/') }}" class="inline-block w-36 md:w-36">
+        <span class="responsive-obj pb-[48.15%]">
+          <svg>
+            <title>
+              {{ seo.seoTitle }}
+            </title>
+            <use xlink:href="#brand-logo-left" />
+          </svg>
+        </span>
+      </a>
+    </div>
+    <div class="site-footer-legal text-center w-full">
+      © {{ now|date('Y') }} {{ companyInfo.copyrightEntity }} - <a href="{{ url('legal') }}" class="underline text-brown-800">Legal</a>
+    </div>
+  </div>
+</footer>

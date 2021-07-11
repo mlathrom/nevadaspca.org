@@ -1,0 +1,56 @@
+contentColumnType: string
+fieldGroup: 71569e12-f9ab-4bf5-a180-a4d76f28e33a # Forms
+handle: formSubject
+instructions: ''
+name: Subject
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'General Inquiry'
+        -
+          - value
+          - somethingElse
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Adoption & Fostering'
+        -
+          - value
+          - techSupport
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Appointments
+        -
+          - value
+          - advertising
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Events
+        -
+          - value
+          - legal
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

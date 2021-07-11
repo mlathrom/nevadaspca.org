@@ -1,0 +1,111 @@
+fieldLayouts:
+  fc01e5b4-f9f6-488b-8a1c-edb33de1125c:
+    tabs:
+      -
+        elements:
+          -
+            heading: Contact
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: bde26dcb-ea4c-4c28-b080-80bf1913933b # Email Address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 3a0dd29c-70d7-4e23-953e-33b4d766f411 # Phone
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            heading: Address
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 900695c1-a897-4bd6-a538-9fa21ac78171 # Address Line 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: b44caaff-8a05-40ee-bed1-2149c93b42e1 # Address Line 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 848734fa-3f34-43eb-a287-0ccfadf42d35 # City
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 91ee6587-9f62-4882-9e85-048204f01cae # State
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
+            fieldUid: 62405b9f-5a0c-4a43-9609-2344310dd134 # Zip Code
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 25
+          -
+            heading: Hours
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 46d36c04-c073-43f8-8b40-c49afa54256b # Operation Hours
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: b83ad75f-4385-4657-bd13-379a5ae5ad78 # Appointment Hours
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            heading: Legal
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: 207e0d09-22fd-4755-9aca-ff74f60dd7e5 # Copyright Entity
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+        name: General
+        sortOrder: 1
+handle: companyInfo
+name: 'Company Info'

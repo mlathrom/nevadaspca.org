@@ -1,0 +1,147 @@
+{# --------------------------------- #}
+{# Contact Page
+{# --------------------------------- #}
+
+{% extends '_layouts/default' %}
+
+{% set formStatus = craft.app.request.getQueryParam('s') %}
+
+{% block content %}
+  <div class="mx-auto w-full max-w-screen-2xl lg:pt-6 px-4 lg:px-8">
+    <div class="text-center">
+      <h1 class="mt-12">
+        <span class="text-3xl md:text-5xl font-bold">
+          Contact Us
+        </span>
+      </h1>
+      <p class="text-xl mt-4">You can also <a href="https://www.twitter.com/scriptslug" class="text-indigo-600 hover:underline" target="_blank" rel="noopener">reach out on Twitter</a>.</p>
+    </div>
+    <div class="mt-14 max-w-screen-md mx-auto">
+      {% if formStatus == 'success' %}
+        <div class="bg-white shadow-md rounded-lg p-10 text-center">
+          <h2 class="heading text-4xl leading-relaxed">Thanks for reaching out.</h2>
+          <p class="mt-8 text-lg">We look forward to talking with you.</p>
+          <a href="{{ url('contact') }}" class="btn btn-black mt-10">Send another message</a>
+        </div>
+      {% else %}
+        {% macro errorList(errors) %}
+          {% if errors %}
+            <ul class="text-sm text-red-500 px-3">
+              {% for error in errors %}
+                <li>{{ error }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endmacro %}
+        <form method="post" accept-charset="UTF-8" class="w-full">
+          {{ csrfInput() }}
+          {{ actionInput('entries/save-entry') }}
+          {{ redirectInput('contact/?s=success') }}
+          {{ hiddenInput('sectionId', '16') }}
+          {{ hiddenInput('enabled', '1') }}
+          {{ hiddenInput('entryVariable', 'formEntry'|hash) }}
+          {% set formEntry = formEntry ?? create('craft\\elements\\Entry') %}
+          
+          <div class="max-w-md border-b border-gray-200 relative mx-auto">
+            <label for="formSubject"
+              class="text-xl px-3 pt-2 block text-center">
+              What can we help you with?
+            </label>
+            <div class="bg-white shadow rounded-lg mt-4">
+              {% set formSubject = craft.app.fields.getFieldByHandle('formSubject') %}
+              <select name="fields[formSubject]"
+                id="formSubject"
+                class="js-contact-form-subject block px-3 h-12 w-full bg-transparent outline-none text-xl appearance-none"
+                required>
+                <option value="" disabled selected>Select a subject</option>
+                {% for option in formSubject.options %}
+                  {% set selected = option.value == formEntry.formSubject ? 'selected'%}
+                  <option value="{{ option.value }}" {{ selected }}>{{ option.label }}</option>
+                {% endfor %}
+              </select>
+              <div class="pointer-events-none absolute bottom-0 right-0 flex h-12 items-center px-2 text-gray-700">
+                <svg class="text-black w-3 h-3">
+                  <use xlink:href="#icon-arrow-down">
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          <div class="js-contact-form-fields {{ not formEntry.formSubject ? 'hidden' }}">
+            <div class="bg-white shadow-lg rounded-lg mt-8">
+              <div class="w-1/2 border-b border-gray-200 relative">
+                <label for="fullName"
+                  class="font-medium text-lg px-3 pt-2 block">
+                  Name <em class="text-red-500 text-xl">*</em>
+                </label>
+                {% if formEntry %}
+                  {{ _self.errorList(formEntry.getErrors('fullName')) }}
+                {% endif %}
+                <input type="text"
+                  name="fields[fullName]"
+                  id="fullName"
+                  class="form-input block px-3 h-12 w-full bg-transparent outline-none text-lg"
+                  value="{{ formEntry.fullName }}"
+                  required />
+              </div>
+    
+              <div class="w-full border-b border-gray-200 relativ">
+                <label for="email"
+                  class="font-medium text-lg px-3 pt-2 block">
+                  Email <em class="text-red-500 text-xl">*</em>
+                </label>
+                {% if formEntry %}
+                  {{ _self.errorList(formEntry.getErrors('email')) }}
+                {% endif %}
+                <input type="text"
+                  name="fields[email]"
+                  id="email"
+                  class="form-input block px-3 h-12 w-full bg-transparent outline-none text-lg"
+                  value="{{ formEntry.email }}"
+                  required />
+              </div>
+  
+              <div class="w-full relative rounded-b-lg overflow-hidden">
+                <label for="formMessage"
+                  id="formMessage"
+                  class="font-medium text-lg px-3 pt-2 block">
+                  Message <em class="text-red-500 text-xl">*</em>
+                </label>
+                {% if formEntry %}
+                  {{ _self.errorList(formEntry.getErrors('formMessage')) }}
+                {% endif %}
+                <textarea name="fields[formMessage]"
+                  id="formMessage"
+                  cols="30"
+                  rows="10"
+                  class="block px-3 w-full bg-transparent outline-none text-lg"
+                  value=""
+                  required>{{- formEntry.formMessage -}}</textarea>
+              </div>
+            </div>
+            <input id="required" name="required" type="text" class="cloak">
+    
+            <button type="submit"
+              value="Publish"
+              class="btn btn-indigo rounded-lg mt-6 md:text-xl px-10 py-6 md:py-8 w-full">
+              Send Message
+            </button>
+            <div class="mt-12 pt-8 border-t border-brown-300 text-brown-800">
+              <p>{{ seo.seoTitle }} will use the information you submit to respond to your 
+                inquiry. We will never sell this data or use it for marketing 
+                purposes. For more information, 
+                <a href="{{ url('legal') }}"
+                class="text-indigo-600 hover:underline">
+                  read our privacy policy
+                </a>.</p>
+            </div>
+          </div>
+        </form>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}
+
+{% block footInsert %}
+  {{ craft.vite.script('/src/js/pages/contact.js') }}
+{% endblock %}

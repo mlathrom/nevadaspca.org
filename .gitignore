@@ -1,4 +1,59 @@
-# Craft 2 Storage (https://craftcms.com/support/craft-storage-gitignore)
-# not necessary for Craft 3 (https://github.com/craftcms/craft/issues/26)
-/craft/storage/*
-!/craft/storage/rebrand
+# MacOS system files
+*.DS_Store
+Icon
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+
+# Node
+node_modules
+
+# Build Folders
+web/assets/
+.tmp
+
+# Misc
+app.yaml
+
+# Vagrant
+.vagrant
+Vagrantfile
+install.sh
+
+# Composer
+vendor/
+
+# Craft Storage
+!storage/
+
+storage/*
+!storage/rebrand/
+!storage/rebrand/logo
+!storage/rebrand/icon
+
+# Misc
+web/cpresources/**/*
+*.box
+*.log
+*.sql
+.env
+
+# Apache
+.htaccess
+
+# License
+license.key
+
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+output.json
+
+# dist
+web/dist

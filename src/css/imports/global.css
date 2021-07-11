@@ -1,0 +1,12 @@
+:root {
+  --brand-green: #b6c764;
+  --brand-yellow: #e7d188;
+}
+
+.responsive-obj {
+  @apply relative block h-0 fill-current;
+}
+
+.responsive-obj > * {
+  @apply absolute w-full h-full;
+}

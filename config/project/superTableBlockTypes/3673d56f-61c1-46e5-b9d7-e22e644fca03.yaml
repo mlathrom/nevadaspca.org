@@ -1,0 +1,67 @@
+field: 46d36c04-c073-43f8-8b40-c49afa54256b # Operation Hours
+fieldLayouts:
+  0eba5384-fad8-428f-9202-32200afcc82d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: de87f35e-5ccb-440d-ace1-b1c4a385d563 # Sunday
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  de87f35e-5ccb-440d-ace1-b1c4a385d563: # Sunday
+    contentColumnType: text
+    fieldGroup: null
+    handle: sunday
+    instructions: ''
+    name: Sunday
+    searchable: false
+    settings:
+      addRowLabel: 'Add a row'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - ''
+                -
+                  - handle
+                  - startTime
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - time
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - ''
+                -
+                  - handle
+                  - endTime
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - time
+      maxRows: '1'
+      minRows: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table

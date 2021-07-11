@@ -1,0 +1,7 @@
+{%- macro phone(number) -%}
+  {% set firstSeg = number|slice(0, 3) %}
+  {% set secondSeg = number|slice(3, 3) %}
+  {% set thirdSeg = number|slice(6, 4) %}
+  {% set formattedString = firstSeg ~ '.' ~ secondSeg ~ '.' ~ thirdSeg %}
+  {{ formattedString }}
+{%- endmacro -%}

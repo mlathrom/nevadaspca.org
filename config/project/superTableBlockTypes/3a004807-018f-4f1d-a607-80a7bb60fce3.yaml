@@ -1,0 +1,89 @@
+field: bff3f469-d94b-4f4b-a707-7f7ac7be44cb # Facebook
+fieldLayouts:
+  57ab03e4-7967-42b3-b401-2cbded9d2a00:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 483b8056-5bca-4826-b935-bb73bf760856 # Profile
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c2a110e9-a17f-4af1-be6d-ff057ec72fc2 # Profile Url
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5766f15e-9f6b-4d2c-a83a-8fd7336d161e # App Id
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  483b8056-5bca-4826-b935-bb73bf760856: # Profile
+    contentColumnType: text
+    fieldGroup: null
+    handle: profile
+    instructions: 'Your profile handle excluding the @ symbol'
+    name: Profile
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  5766f15e-9f6b-4d2c-a83a-8fd7336d161e: # App Id
+    contentColumnType: text
+    fieldGroup: null
+    handle: appId
+    instructions: ''
+    name: 'App Id'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c2a110e9-a17f-4af1-be6d-ff057ec72fc2: # Profile Url
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: profileUrl
+    instructions: 'Link to your profile page'
+    name: 'Profile Url'
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: null
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url

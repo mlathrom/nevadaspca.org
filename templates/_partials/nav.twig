@@ -1,0 +1,54 @@
+<button class="nav-mobile-toggle h-10 w-10 bg-brown-50 shadow rounded flex items-center justify-center md:hidden">
+  <svg class="h-4 w-4 fill-current text-black open-icon">
+    <use xlink:href="#icon-grid" />
+  </svg>
+  <svg class="h-6 w-6 fill-current text-black close-icon">
+    <use xlink:href="#icon-x" />
+  </svg>
+</button>
+<nav class="nav-mobile opacity-0 h-0 transform scale-95 overflow-hidden md:overflow-visible absolute md:block top-full left-0 w-full bg-brown-100 font-sans shadow-2xl flex-grow md:h-auto md:opacity-100 md:scale-100 md:relative md:w-auto md:shadow-none md:border-none md:h-auto transition-all duration-100 md:duration-500">
+  <div class="p-2 md:p-0 md:inline-block">
+    <ul class="flex flex-wrap">
+      <li class="w-1/2 p-2 md:p-0 md:w-auto">
+        <a href="{{ url('glossary') }}"
+          class="nav-button flex flex-col w-full shadow bg-brown-50 space-y-1 text-gray-800 md:flex-row md:items-center md:space-x-2 p-4 md:py-2 md:space-y-0 md:shadow-none md:bg-transparent hover:shadow hover:bg-brown-50 transition-all duration-300 ease-out">
+          <svg class="h-6 w-6 flex-shrink-0">
+            <use xlink:href="#icon-glossary" />
+          </svg>
+          <spam>
+            Glossary
+          </spam>
+        </a>
+      </li>
+      <li class="w-1/2 p-2 md:p-0 md:w-auto">
+        <a href="{{ url('articles') }}"
+          class="nav-button flex flex-col w-full shadow bg-brown-50 space-y-1 text-gray-800 md:flex-row md:items-center md:space-x-2 p-4 md:py-2 md:space-y-0 md:shadow-none md:bg-transparent hover:shadow hover:bg-brown-50 transition-all duration-300 ease-out">
+          <svg class="h-6 w-6 flex-shrink-0">
+            <use xlink:href="#icon-articles" />
+          </svg>
+          <spam>
+            Articles
+          </spam>
+        </a>
+      </li>
+    </ul>
+  </div>
+  {#
+  <a href="{{ url('scripts') }}" class="nav-button space-x-1">
+    <svg>
+      <use xlink:href="#icon-scripts" />
+    </svg>
+    <spam>
+      Scripts
+    </spam>
+  </a>
+  <a href="{{ url('format') }}" class="nav-button space-x-1">
+    <svg>
+      <use xlink:href="#icon-format" />
+    </svg>
+    <spam>
+      Format
+    </spam>
+  </a>
+  #}
+</nav>

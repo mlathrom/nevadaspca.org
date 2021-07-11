@@ -1,0 +1,14 @@
+contentColumnType: string(255)
+fieldGroup: fa0ada94-3ad1-41b9-8463-7b4a41f9fe27 # Animals
+handle: animalImage
+instructions: ''
+name: Image
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: null
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

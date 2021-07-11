@@ -1,0 +1,19 @@
+# robots.txt for {{ siteUrl }}
+
+{% if not craft.app.config.general.devMode %}
+Sitemap: {{ siteUrl }}sitemap.xml
+{% endif %}
+
+# Don't allow web crawlers to index Craft
+
+User-agent: *
+{% if not craft.app.config.general.devMode %}
+Disallow: /craft/
+Disallow: /request/
+Disallow: /rss/*
+Disallow: *.pdf
+Allow: /ads.txt
+{% endif %}
+{% if craft.app.config.general.devMode %}
+Disallow: /
+{% endif %}
