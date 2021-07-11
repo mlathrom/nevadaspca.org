@@ -15,7 +15,7 @@ module.exports = {
   },
   theme: {
     fontFamily: {
-      sans: ['Nunito VF', 'sans-serif'],
+      sans: ['Nunito', 'sans-serif'],
     },
     extend: {
       padding: {
@@ -113,6 +113,7 @@ module.exports = {
           'green-dark': '#23381D',
           yellow: '#e7d188',
           peach: '#FFF3E4',
+          'peach-dark': '#EFE4D6',
           pink: '#E8849B',
           blue: '#9DD8E6',
         },
