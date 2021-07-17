@@ -1,24 +1,25 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: 7b386fd3-3446-443b-a78e-7ccbab721caf # Common
-handle: newsFeatureImage
+fieldGroup: 5cb2b1e0-521d-4292-b1d0-e5aac1a6bf49 # Articles
+handle: articleFeatureImage
 instructions: ''
-name: 'News Feature Image'
+name: 'Article Feature Image'
 searchable: false
 settings:
   allowSelfRelations: false
   allowUploads: true
   allowedKinds: null
-  defaultUploadLocationSource: 'volume:4913dc1f-7ce0-4bcf-ad84-f3c59407d40a' # News
+  defaultUploadLocationSource: 'volume:4913dc1f-7ce0-4bcf-ad84-f3c59407d40a' # Articles
   defaultUploadLocationSubpath: img
   limit: '1'
   localizeRelations: false
   previewMode: full
   restrictFiles: ''
   selectionLabel: 'Add an image'
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:4913dc1f-7ce0-4bcf-ad84-f3c59407d40a' # News
+  singleUploadLocationSource: 'volume:4913dc1f-7ce0-4bcf-ad84-f3c59407d40a' # Articles
   singleUploadLocationSubpath: img
   source: null
   sources: '*'

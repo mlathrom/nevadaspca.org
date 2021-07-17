@@ -1,5 +1,6 @@
+columnSuffix: null
 contentColumnType: string(360)
-fieldGroup: 7b386fd3-3446-443b-a78e-7ccbab721caf # Common
+fieldGroup: 5cb2b1e0-521d-4292-b1d0-e5aac1a6bf49 # Articles
 handle: articleSummary
 instructions: ''
 name: 'Article Summary'
@@ -11,7 +12,7 @@ settings:
   columnType: null
   initialRows: '4'
   multiline: ''
-  placeholder: ''
+  placeholder: null
   uiMode: normal
 translationKeyFormat: null
 translationMethod: none

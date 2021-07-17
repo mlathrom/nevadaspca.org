@@ -7,49 +7,57 @@
 
 {% block seo %}
   {%- minify -%}
-  <!-- Standard SEO -->
-  <meta name="description"
-    content="Legal information including Privacy Policy and Terms of Service." />
+    <!-- Standard SEO -->
+    <meta name="description"
+      content="Legal information including Privacy Policy and Terms of Service." />
 
-  <!-- Facebook OpenGraph -->
-  <meta property="og:description"
-    content="Legal information including Privacy Policy and Terms of Service." />
-  <meta property="og:image"
-    content="{{ siteUrl }}assets/images/share-card.png" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="1120" />
+    <!-- Facebook OpenGraph -->
+    <meta property="og:description"
+      content="Legal information including Privacy Policy and Terms of Service." />
+    <meta property="og:image"
+      content="{{ siteUrl }}assets/images/share-card.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1120" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:description"
-    content="Legal information including Privacy Policy and Terms of Service." />
-  <meta name="twitter:image"
-    content="{{ siteUrl }}assets/images/share-card.png" />
+    <!-- Twitter Card -->
+    <meta name="twitter:description"
+      content="Legal information including Privacy Policy and Terms of Service." />
+    <meta name="twitter:image"
+      content="{{ siteUrl }}assets/images/share-card.png" />
   {%- endminify -%}
 {% endblock %}
 
 {% block content %}
-  <div class="mx-auto w-full max-w-screen-xl lg:pt-6 px-4 lg:px-8">
+  <div class="mx-auto w-full max-w-screen-2xl px-4 py-12 md:py-20">
     <div class="text-center">
-      <h1 class="mt-12">
+      <h1>
         <span class="text-3xl md:text-5xl font-bold">Legal</span>
       </h1>
     </div>
-    <div class="lg:flex lg:space-x-16 mt-12">
-      <div class="prose lg:w-1/4">
-        <ul>
-          <li>
+    <div class="md:flex md:space-x-16 mt-12">
+      <div class="prose md:w-1/4">
+        <ul class="sm:flex sm:space-x-8 md:space-x-0 md:block">
+          <li class="sm:w-1/2 md:w-full">
             <a href="#privacy-policy">Privacy Policy</a>
             <ol>
               <li><a href="#privacy-policy-1">Information we collect</a></li>
-              <li><a href="#privacy-policy-2">Legal bases for processing</a></li>
-              <li><a href="#privacy-policy-3">Collection and use of information</a></li>
+              <li>
+                <a href="#privacy-policy-2">Legal bases for processing</a>
+              </li>
+              <li>
+                <a href="#privacy-policy-3">
+                  Collection and use of information
+                </a>
+              </li>
               <li>
                 <a href="#privacy-policy-4">
                   Disclosure of personal information to third parties
                 </a>
               </li>
               <li>
-                <a href="#privacy-policy-5">International transfers of personal information</a>
+                <a href="#privacy-policy-5">
+                  International transfers of personal information
+                </a>
               </li>
               <li>
                 <a href="#privacy-policy-6">
@@ -61,7 +69,7 @@
               <li><a href="#privacy-policy-9">Changes to this policy</a></li>
             </ol>
           </li>
-          <li>
+          <li class="sm:w-1/2 md:w-full">
             <a href="#terms-of-service">Terms of Service</a>
             <ol>
               <li><a href="#terms-of-service-1">Terms</a></li>
@@ -74,19 +82,19 @@
               <li><a href="#terms-of-service-8">Governing Law</a></li>
             </ol>
           </li>
-          <li><a href="#fair-use">Fair Use</a></li>
-          <li><a href="#copyright-claims">Copyright Claims</a></li>
         </ul>
       </div>
-      <div class="prose md:prose-lg lg:w-3/4 max-w-none">
+      <div class="prose md:prose-lg md:w-3/4 max-w-none mt-12 md:mt-0">
         <h2 id="#privacy-policy">
           Privacy Policy
         </h2>
         <p>
-          Your privacy is important to us. It is {{ companyInfo.legalTitle }}'s policy to respect
-          your privacy regarding any information we may collect from you across
-          our website, <a href="{{ siteUrl }}">{{ siteUrl }}</a>, and other
-          sites we own and operate.
+          Your privacy is important to us. It is {{
+            companyInfo.copyrightEntity
+          }}'s policy to respect your privacy regarding any information we may
+          collect from you across our website, <a href="{{ siteUrl }}">
+            {{ siteUrl }}
+          </a>, and other sites we own and operate.
         </p>
         <h3 id="#privacy-policy-1">
           1. Information we collect
@@ -362,10 +370,11 @@
         <ol type="a">
           <li>
             Permission is granted to temporarily download one copy of the
-            materials (information or software) on {{ companyInfo.legalTitle }}'s website for
-            personal, non-commercial transitory viewing only. This is the grant
-            of a license, not a transfer of title, and under this license you
-            may not:<ol type="i">
+            materials (information or software) on {{
+              companyInfo.copyrightEntity
+            }}'s website for personal, non-commercial transitory viewing only.
+            This is the grant of a license, not a transfer of title, and under
+            this license you may not:<ol type="i">
               <li>modify or copy the materials;</li>
               <li>
                 use the materials for any commercial purpose, or for any public
@@ -373,7 +382,7 @@
               </li>
               <li>
                 attempt to decompile or reverse engineer any software contained
-                on {{ companyInfo.legalTitle }}'s website;
+                on {{ companyInfo.copyrightEntity }}'s website;
               </li>
               <li>
                 remove any copyright or other proprietary notations from the
@@ -387,11 +396,11 @@
           </li>
           <li>
             This license shall automatically terminate if you violate any of
-            these restrictions and may be terminated by {{ companyInfo.legalTitle }} at any time.
-            Upon terminating your viewing of these materials or upon the
-            termination of this license, you must destroy any downloaded
-            materials in your possession whether in electronic or printed
-            format.
+            these restrictions and may be terminated by {{
+              companyInfo.copyrightEntity
+            }} at any time. Upon terminating your viewing of these materials or upon
+            the termination of this license, you must destroy any downloaded materials
+            in your possession whether in electronic or printed format.
           </li>
         </ol>
         <h3 id="#terms-of-service-3">
@@ -399,17 +408,17 @@
         </h3>
         <ol type="a">
           <li>
-            The materials on {{ companyInfo.legalTitle }}'s website are provided on an 'as is'
-            basis. {{ companyInfo.legalTitle }} makes no warranties, expressed or implied, and
-            hereby disclaims and negates all other warranties including, without
-            limitation, implied warranties or conditions of merchantability,
-            fitness for a particular purpose, or non-infringement of
-            intellectual property or other violation of rights.
+            The materials on {{ companyInfo.copyrightEntity }}'s website are
+            provided on an 'as is' basis. {{ companyInfo.copyrightEntity }} makes
+            no warranties, expressed or implied, and hereby disclaims and negates
+            all other warranties including, without limitation, implied warranties
+            or conditions of merchantability, fitness for a particular purpose, or
+            non-infringement of intellectual property or other violation of rights.
           </li>
           <li>
-            Further, {{ companyInfo.legalTitle }} does not warrant or make any representations
-            concerning the accuracy, likely results, or reliability of the use
-            of the materials on its website or otherwise relating to such
+            Further, {{ companyInfo.copyrightEntity }} does not warrant or make any
+            representations concerning the accuracy, likely results, or reliability
+            of the use of the materials on its website or otherwise relating to such
             materials or on any sites linked to this site.
           </li>
         </ol>
@@ -417,43 +426,48 @@
           4. Limitations
         </h3>
         <p>
-          In no event shall {{ companyInfo.legalTitle }} or its suppliers be liable for any
-          damages (including, without limitation, damages for loss of data or
-          profit, or due to business interruption) arising out of the use or
-          inability to use the materials on {{ companyInfo.legalTitle }}'s website, even if
-          {{ companyInfo.legalTitle }} or a {{ companyInfo.legalTitle }} authorized representative has been
-          notified orally or in writing of the possibility of such damage.
-          Because some jurisdictions do not allow limitations on implied
-          warranties, or limitations of liability for consequential or
-          incidental damages, these limitations may not apply to you.
+          In no event shall {{ companyInfo.copyrightEntity }} or its suppliers be
+          liable for any damages (including, without limitation, damages for loss
+          of data or profit, or due to business interruption) arising out of the
+          use or inability to use the materials on {{
+            companyInfo.copyrightEntity
+          }}'s website, even if
+          {{ companyInfo.copyrightEntity }} or a {{
+            companyInfo.copyrightEntity
+          }} authorized representative has been notified orally or in writing of
+          the possibility of such damage. Because some jurisdictions do not allow
+          limitations on implied warranties, or limitations of liability for consequential
+          or incidental damages, these limitations may not apply to you.
         </p>
         <h3 id="#terms-of-service-5">
           5. Accuracy of materials
         </h3>
         <p>
-          The materials appearing on {{ companyInfo.legalTitle }}'s website could include
-          technical, typographical, or photographic errors. {{ companyInfo.legalTitle }} does not
-          warrant that any of the materials on its website are accurate,
-          complete or current. {{ companyInfo.legalTitle }} may make changes to the materials
-          contained on its website at any time without notice. However Script
-          Slug does not make any commitment to update the materials.
+          The materials appearing on {{ companyInfo.copyrightEntity }}'s website
+          could include technical, typographical, or photographic errors. {{
+            companyInfo.copyrightEntity
+          }} does not warrant that any of the materials on its website are accurate,
+          complete or current. {{ companyInfo.copyrightEntity }} may make changes
+          to the materials contained on its website at any time without notice. However
+          Script Slug does not make any commitment to update the materials.
         </p>
         <h3 id="#terms-of-service-6">
           6. Links
         </h3>
         <p>
-          {{ companyInfo.legalTitle }} has not reviewed all of the sites linked to its website
-          and is not responsible for the contents of any such linked site. The
-          inclusion of any link does not imply endorsement by {{ companyInfo.legalTitle }} of the
-          site. Use of any such linked website is at the user's own risk.
+          {{ companyInfo.copyrightEntity }} has not reviewed all of the sites linked
+          to its website and is not responsible for the contents of any such linked
+          site. The inclusion of any link does not imply endorsement by {{
+            companyInfo.copyrightEntity
+          }} of the site. Use of any such linked website is at the user's own risk.
         </p>
         <h3 id="#terms-of-service-7">
           7. Modifications
         </h3>
         <p>
-          {{ companyInfo.legalTitle }} may revise these terms of service for its website at any
-          time without notice. By using this website you are agreeing to be
-          bound by the then current version of these terms of service.
+          {{ companyInfo.copyrightEntity }} may revise these terms of service for
+          its website at any time without notice. By using this website you are agreeing
+          to be bound by the then current version of these terms of service.
         </p>
         <h3 id="#terms-of-service-8">
           8. Governing Law
@@ -462,52 +476,6 @@
           These terms and conditions are governed by and construed in accordance
           with the laws of California and you irrevocably submit to the
           exclusive jurisdiction of the courts in that State or location.
-        </p>
-        <h id="#fair-use">
-          Fair Use
-        </h2>
-        <p>
-          Notwithstanding the provisions of sections 106 and 106A, the fair use
-          of a copyrighted work, including such use by reproduction in copies or
-          phonorecords or by any other means specified by that section, for
-          purposes such as criticism, comment, news reporting, teaching
-          (including multiple copies for classroom use), scholarship, or
-          research, is not an infringement of copyright. In determining whether
-          the use made of a work in any particular case is a fair use the
-          factors to be considered shall include—
-        </p>
-        <ol>
-          <li>
-            the purpose and character of the use, including whether such use is
-            of a commercial nature or is for nonprofit educational purposes;
-          </li>
-          <li>the nature of the copyrighted work;</li>
-          <li>
-            the amount and substantiality of the portion used in relation to the
-            copyrighted work as a whole; and
-          </li>
-          <li>
-            the effect of the use upon the potential market for or value of the
-            copyrighted work.
-          </li>
-        </ol>
-        <p>
-          The fact that a work is unpublished shall not itself bar a finding of
-          fair use if such finding is made upon consideration of all the above
-          factors.
-        </p>
-        <p>
-          <a href="https://www.law.cornell.edu/uscode/text/17/107"
-            target="_blank"
-            rel="noopener">
-            17 U.S. Code § 107 - Limitations on exclusive rights: Fair use
-          </a>
-        </p>
-        <h2 id="#copyright-claims">
-          Copyright Claims
-        </h2>
-        <p>
-          For copyright claims and takedown requests, please email <a href="{{ url('contact') }}">reach out to us</a>.
         </p>
       </div>
     </div>

@@ -37,13 +37,13 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: news
+handle: articles
 hasUrls: true
-name: News
+name: Articles
 settings:
-  path: '@webroot/assets/news'
+  path: '@webroot/assets/articles'
 sortOrder: 2
 titleTranslationKeyFormat: null
 titleTranslationMethod: null
 type: craft\volumes\Local
-url: '@web/assets/news'
+url: '@web/assets/articles'

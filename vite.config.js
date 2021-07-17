@@ -27,9 +27,12 @@ export default defineConfig({
     vue(),
   ],
   server: {
-    port: 8081,
-    watch: {
-      usePolling: true,
+    host: '0.0.0.0',
+    hmr: {
+      host: 'nevadaspca.local',
+      port: '3000',
+      path: '/',
     },
+    cors: true,
   },
 })

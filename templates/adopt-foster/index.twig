@@ -7,7 +7,7 @@
 {% block content %}
   {% import '_macros/animals' as animals %}
 
-  <div class="flex flex-wrap -m-4 font-normal">
-    {{ animals.getAnimals('dogs') }}
+  <div class="px-4 max-w-screen-2xl mx-auto py-20">
+    {{ animals.getAnimals('', null, 'date-asc') }}
   </div>
 {% endblock %}

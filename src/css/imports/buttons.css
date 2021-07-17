@@ -8,14 +8,25 @@
 /**
  * Standard Buttons
  */
-.btn {
-  @apply text-lg px-6 rounded shadow-none tracking-wide transform transition-all duration-75 font-black h-12 inline-flex justify-center items-center;
 
-  &:active {
-    @apply scale-95;
+@layer components {
+  .button {
+    @apply h-10 items-center justify-center flex rounded font-bold px-4 transition-transform duration-100 ease-out hover:scale-105 active:scale-95;
+
+    svg {
+      @apply fill-current;
+    }
   }
 
-  svg {
-    @apply fill-current;
+  .button-green {
+    @apply button bg-brand-green text-white text-shadow;
+  }
+
+  .button-pink {
+    @apply button bg-brand-pink text-white text-shadow;
+  }
+
+  .button-black {
+    @apply button border-2 border-black text-shadow;
   }
 }

@@ -1,4 +1,4 @@
-<header class="site-header fixed shadow bg-white w-full md:relative">
+<header class="site-header fixed top-0 shadow bg-white w-full md:relative z-50">
   <div class="notch-l notch-r">
     <div class="site-header-container text-center">
       <div class="site-header-logo h-16 flex justify-center items-center w-full md:p-4">
@@ -20,68 +20,98 @@
             </span>
           </a>
         </div>
-        <button class="w-16 h-16 flex items-center justify-center md:hidden">
+        <button class="nav-mobile-toggle w-16 h-16 flex items-center justify-center md:hidden">
           <svg class="w-6 h-6">
             <use xlink:href="#icon-hamburger" />
           </svg>
         </button>
       </div>
-      <nav class="site-header-nav text-lg font-bold text-center py-4 md:py-0 md:text-base md:border-t md:border-gray-200">
-        <ul class="md:flex justify-center">
-          <li>
-            <a href="{{ url('adopt-foster') }}" class="block p-2 md:px-6">
+      <div class="nav-mobile transition-all duration-300 ease-out overflow-hidden md:contents md:h-auto md:opacity-1">
+        <nav class="site-header-nav text-lg font-bold text-center py-4 md:py-0 md:text-base md:border-t md:border-gray-200">
+          <ul class="md:flex justify-center">
+            <li>
+              <a href="{{ url('adopt-foster') }}"
+                class="p-2 md:h-11 inline-flex items-center md:px-6">
+                <span class="beam">Adopt & Foster</span>
+              </a>
+            </li>
+            <li>
+              <a href="{{ url('support') }}"
+                class="p-2 md:h-11 inline-flex items-center md:px-6">
+                <span class="beam">Support</span>
+              </a>
+            </li>
+            <li>
+              <a href="{{ url('articles') }}"
+                class="p-2 md:h-11 inline-flex items-center md:px-6">
+                <span class="beam">Articles</span>
+              </a>
+            </li>
+            <li>
+              <a href="{{ url('events') }}"
+                class="p-2 md:h-11 inline-flex items-center md:px-6">
+                <span class="beam">Events</span>
+              </a>
+            </li>
+            <li>
+              <a href="{{ url('about') }}"
+                class="p-2 md:h-11 inline-flex md:items-center md:px-6">
+                <span class="beam">About</span>
+              </a>
+            </li>
+            <li>
+              <a href="{{ url('contact') }}"
+                class="p-2 md:h-11 inline-flex items-center md:px-6">
+                <span class="beam">Contact</span>
+              </a>
+            </li>
+            <li class="md:border-l md:border-gray-200">
+              <a href="{{ url('shop') }}"
+                class="p-2 md:h-11 inline-flex items-center space-x-2 md:px-6">
+                <svg class="w-5 h-5 -mt-1">
+                  <use xlink:href="#icon-cart" />
+                </svg>
+                <span class="beam">Shop</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="site-header-social p-4">
+          <ul class="flex justify-center md:justify-start space-x-4">
+            <li>
+              <a href="{{ social.facebook[0].profileUrl }}">
+                <svg class="w-6 h-6">
+                  <use xlink:href="#icon-facebook" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="{{ social.twitter[0].profileUrl }}">
+                <svg class="w-6 h-6">
+                  <use xlink:href="#icon-twitter" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="{{ social.instagram[0].profileUrl }}">
+                <svg class="w-6 h-6">
+                  <use xlink:href="#icon-instagram" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="site-header-action p-6 md:p-4">
+          <div class="space-y-4 md:flex md:justify-end md:space-y-0 md:space-x-2 md:flex-wrap">
+            <a href="{{ url('doante') }}"
+              class="button-green mx-auto w-full max-w-xs md:w-auto md:mx-0">
+              Donate
+            </a>
+            <a href="{{ url('adopt-foster') }}"
+              class="button-pink mx-auto w-full max-w-xs md:w-auto md:mx-0">
               Adopt & Foster
             </a>
-          </li>
-          <li>
-            <a href="{{ url('events') }}" class="block p-2 md:px-6">Events</a>
-          </li>
-          <li>
-            <a href="{{ url('support') }}" class="block p-2 md:px-6">Support</a>
-          </li>
-          <li>
-            <a href="{{ url('about') }}" class="block p-2 md:px-6">About</a>
-          </li>
-          <li>
-            <a href="{{ url('contact') }}" class="block p-2 md:px-6">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="site-header-social p-4">
-        <ul class="flex justify-center md:justify-start space-x-4">
-          <li>
-            <a href="{{ social.facebook[0].profileUrl }}">
-              <svg class="w-6 h-6">
-                <use xlink:href="#icon-facebook" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="{{ social.twitter[0].profileUrl }}">
-              <svg class="w-6 h-6">
-                <use xlink:href="#icon-twitter" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="{{ social.instagram[0].profileUrl }}">
-              <svg class="w-6 h-6">
-                <use xlink:href="#icon-instagram" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="site-header-action p-6 md:p-4">
-        <div class="space-y-4 md:flex md:justify-end md:space-y-0 md:space-x-2 md:flex-wrap">
-          <a href="{{ url('doante') }}"
-            class="h-10 items-center justify-center border-2 border-black flex mx-auto w-full max-w-xs rounded font-bold px-4 md:w-auto md:mx-0">
-            Donate
-          </a>
-          <a href="{{ url('adopt-foster') }}"
-            class="h-10 items-center justify-center bg-brand-pink text-white flex mx-auto w-full max-w-xs rounded font-bold px-4 md:w-auto md:mx-0">
-            Adopt & Foster
-          </a>
+          </div>
         </div>
       </div>
     </div>

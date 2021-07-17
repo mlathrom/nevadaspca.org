@@ -1,5 +1,6 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: 7b386fd3-3446-443b-a78e-7ccbab721caf # Common
+fieldGroup: 5cb2b1e0-521d-4292-b1d0-e5aac1a6bf49 # Articles
 handle: articleContent
 instructions: ''
 name: 'Article Content'
@@ -8,6 +9,7 @@ settings:
   contentTable: '{{%matrixcontent_articlecontent}}'
   maxBlocks: ''
   minBlocks: ''
+  propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null
 translationMethod: site

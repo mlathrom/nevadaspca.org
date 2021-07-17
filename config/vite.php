@@ -62,7 +62,7 @@ return [
      *              This can be the same as `$devServerPublic`, but may be different in containerized or VM setups.
      *              ONLY used if $checkDevServer = true
      */
-    'devServerInternal' => '',
+    'devServerInternal' => getenv('VITE_DEV_SERVER_INTERNAL'),
 
     /**
      * @var bool Should we check for the presence of the dev server by pinging $devServerInternal to make sure it's running?

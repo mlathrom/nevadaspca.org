@@ -15,7 +15,7 @@
   ],
   "prefer-stable": true,
   "require": {
-    "craftcms/cms": "3.6.17",
+    "craftcms/cms": "3.7.0",
     "craftcms/plugin-installer": "^1.5",
     "nystudio107/craft-minify": "1.2.10",
     "craftcms/redactor": "2.8.7",
@@ -64,7 +64,7 @@
     "yiisoft/yii2-redis": "~2.0.0",
     "nystudio107/craft-vite": "1.0.11",
     "barrelstrength/sprout-fields": "3.8.5",
-    "verbb/formie": "1.4.8",
+    "verbb/formie": "1.4.9",
     "craftcms/store-hours": "2.1.1.1",
     "mlathrom/craft-shelter-manager": "0.0.1"
   },

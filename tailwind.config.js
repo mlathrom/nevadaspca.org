@@ -109,7 +109,7 @@ module.exports = {
       container: false,
       colors: {
         brand: {
-          green: '#b6c764',
+          green: '#BED161',
           'green-dark': '#23381D',
           yellow: '#e7d188',
           peach: '#FFF3E4',

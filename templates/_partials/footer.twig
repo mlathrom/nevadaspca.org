@@ -1,16 +1,16 @@
 {% import '_macros/helpers' as helpers %}
 
 <footer class="site-footer bg-brand-peach">
-  <div class="md:flex md:justify py-4">
+  <div class="md:flex md:justify py-8 leading-relaxed text-lg">
     <div class="text-center md:w-1/3 p-4">
-      <h2 class="text-xl mb-2 font-bold">
+      <h2 class="text-2xl mb-2 font-bold">
         Visit Us
       </h2>Monday - Saturday<br />
       10am - 4pm<br />
       Closed Sundays
     </div>
     <div class="text-center md:w-1/3 p-4">
-      <h2 class="text-xl mb-2 font-bold">
+      <h2 class="text-2xl mb-2 font-bold">
         Find Us
       </h2>
       <address class="not-italic">
@@ -19,9 +19,15 @@
           companyInfo.zipCode
         }}<br />
       </address>
+      <a href="https://goo.gl/maps/hfYut6ejoaK7oaU98"
+        target="_blank"
+        rel="nooopener"
+        class="underline">
+        Directions
+      </a>
     </div>
     <div class="text-center md:w-1/3 p-4">
-      <h2 class="text-xl mb-2 font-bold">
+      <h2 class="text-2xl mb-2 font-bold">
         Contact Us
       </h2>
       <a href="tel:{{ companyInfo.phone }}">
@@ -44,7 +50,7 @@
           </span>
         </a>
       </div>
-      <p class="flex-shrink text-base">
+      <p class="flex-shrink text-base leading-relaxed">
         Nevada Society for the Prevention of Cruelty to Animals is a 501 (c)(3)
         charitable non-profit organization. EIN: 88-0187383.
       </p>

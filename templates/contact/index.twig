@@ -7,16 +7,15 @@
 {% set formStatus = craft.app.request.getQueryParam('s') %}
 
 {% block content %}
-  <div class="mx-auto w-full max-w-screen-2xl lg:pt-6 px-4 lg:px-8">
+  <div class="mx-auto w-full max-w-screen-2xl px-4 py-12 md:py-20">
     <div class="text-center">
-      <h1 class="mt-12">
+      <h1>
         <span class="text-3xl md:text-5xl font-bold">
           Contact Us
         </span>
       </h1>
-      <p class="text-xl mt-4">You can also <a href="https://www.twitter.com/scriptslug" class="text-indigo-600 hover:underline" target="_blank" rel="noopener">reach out on Twitter</a>.</p>
     </div>
-    <div class="mt-14 max-w-screen-md mx-auto">
+    <div class="mt-10 max-w-screen-md mx-auto">
       {% if formStatus == 'success' %}
         <div class="bg-white shadow-md rounded-lg p-10 text-center">
           <h2 class="heading text-4xl leading-relaxed">Thanks for reaching out.</h2>
@@ -42,7 +41,7 @@
           {{ hiddenInput('entryVariable', 'formEntry'|hash) }}
           {% set formEntry = formEntry ?? create('craft\\elements\\Entry') %}
           
-          <div class="max-w-md border-b border-gray-200 relative mx-auto">
+          <div class="max-w-md relative mx-auto">
             <label for="formSubject"
               class="text-xl px-3 pt-2 block text-center">
               What can we help you with?
@@ -68,8 +67,8 @@
           </div>
           
           <div class="js-contact-form-fields {{ not formEntry.formSubject ? 'hidden' }}">
-            <div class="bg-white shadow-lg rounded-lg mt-8">
-              <div class="w-1/2 border-b border-gray-200 relative">
+            <div class="bg-white shadow rounded-lg mt-8">
+              <div class="w-full border-b border-gray-200 relative">
                 <label for="fullName"
                   class="font-medium text-lg px-3 pt-2 block">
                   Name <em class="text-red-500 text-xl">*</em>
@@ -86,18 +85,18 @@
               </div>
     
               <div class="w-full border-b border-gray-200 relativ">
-                <label for="email"
+                <label for="emailAddress"
                   class="font-medium text-lg px-3 pt-2 block">
                   Email <em class="text-red-500 text-xl">*</em>
                 </label>
                 {% if formEntry %}
-                  {{ _self.errorList(formEntry.getErrors('email')) }}
+                  {{ _self.errorList(formEntry.getErrors('emailAddress')) }}
                 {% endif %}
                 <input type="text"
-                  name="fields[email]"
-                  id="email"
+                  name="fields[emailAddress]"
+                  id="emailAddress"
                   class="form-input block px-3 h-12 w-full bg-transparent outline-none text-lg"
-                  value="{{ formEntry.email }}"
+                  value="{{ formEntry.emailAddress }}"
                   required />
               </div>
   
@@ -119,11 +118,11 @@
                   required>{{- formEntry.formMessage -}}</textarea>
               </div>
             </div>
-            <input id="required" name="required" type="text" class="cloak">
+            <input id="required" name="required" type="text" class="hidden">
     
             <button type="submit"
               value="Publish"
-              class="btn btn-indigo rounded-lg mt-6 md:text-xl px-10 py-6 md:py-8 w-full">
+              class="button-green mt-4 w-full">
               Send Message
             </button>
             <div class="mt-12 pt-8 border-t border-brown-300 text-brown-800">

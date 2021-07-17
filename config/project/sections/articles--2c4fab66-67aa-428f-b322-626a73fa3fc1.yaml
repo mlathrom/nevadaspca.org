@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: articles
+name: Articles
+propagationMethod: all
+siteSettings:
+  051a9101-1abd-4824-aa44-5e9ff5172a13: # Nevada SPCA
+    enabledByDefault: true
+    hasUrls: true
+    template: articles/_entry
+    uriFormat: 'article/{slug}'
+type: channel
