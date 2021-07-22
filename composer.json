@@ -4,13 +4,6 @@
     {
       "type": "composer",
       "url": "https://asset-packagist.org"
-    },
-    {
-      "type": "path",
-      "url": "craft-shelter-manager/",
-      "options": {
-        "symlink": true
-      }
     }
   ],
   "prefer-stable": true,
@@ -64,7 +57,7 @@
     "nystudio107/craft-vite": "1.0.13",
     "barrelstrength/sprout-fields": "3.8.5",
     "craftcms/store-hours": "2.1.1.1",
-    "mlathrom/craft-shelter-manager": "0.0.1"
+    "mlathrom/craft-shelter-manager": "1.0.0"
   },
   "config": {
     "optimize-autoloader": true
