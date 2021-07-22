@@ -6,7 +6,7 @@ deployment:
     - /home/br1hiswk5mtf/.bin/composer install
     - /bin/npm install
     - /bin/npm run build
-    - export DEPLOYPATH=/home/br1hiswk5mtf/nevadaspca.org
+    - export DEPLOYPATH=/home/br1hiswk5mtf/websites/nevadaspca.org
     - /bin/cp -TR $DEPLOYPATH/vendor
     - /bin/cp -TR $DEPLOYPATH/node_modules
     - /bin/cp -TR $DEPLOYPATH/config
