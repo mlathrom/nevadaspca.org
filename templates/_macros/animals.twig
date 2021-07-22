@@ -26,22 +26,31 @@
   
   <div class="flex flex-wrap -m-4 font-normal">
     {% for animal in animals if not break %}
-      <div class="w-1/2 md:w-1/4 p-4 flex">
-        <div class="shadow-lg bg-white rounded-lg w-full relative overflow-hidden">
-          <figure class="w-full pb-[100%] relative bg-gray-300">
+      {% if animal.species == 'Dog' %}
+        {% set animalSpecies = 'dog' %}
+      {% elseif animal.species == 'Cat' %}
+        {% set animalSpecies = 'cat' %}
+      {% elseif animal.species != 'Dog' and animal.species != 'Cat' %}
+        {% set animalSpecies = 'other-animal' %}
+      {% endif %}
+      <div class="w-1/2 md:w-1/4 p-4 flex js-toggle-item animal" data-toggle-item="{{ animalSpecies }}">
+        <div class="shadow bg-white rounded-lg w-full relative overflow-hidden">
+          <a href="{{ url('adopt-foster/animal/' ~ animal.id) }}" class="w-full pb-[100%] relative bg-gray-300 block">
             {% if animal.image != '' %}
               <img src="{{ animal.image }}"
                 alt=""
                 class="h-full w-full absolute top-0 left-0 object-cover" />
             {% endif %}
-          </figure>
-          <div class="absolute text-white bg-brand-pink left-0 p-4 bottom-0 z-10 flex items-end justify-between w-full mt-4 shadow-lg">
-            <h2 class="text-lg md:text-2xl font-bold">
-              {{ animal.name|capitalize }}
-            </h2>
-            <p class="text-right md:text-lg text-white">
-              {{ animal.species }}
-            </p>
+          </a>
+          <div class="absolute bg-white left-0 p-4 bottom-0 z-10 w-full mt-4 shadow-lg">
+            <div class="flex items-end justify-between">
+              <h2 class="text-lg md:text-2xl font-bold">
+                {{ animal.name|capitalize }}
+              </h2>
+              <p class="text-right md:text-lg">
+                {{ animal.species }}
+              </p>
+            </div>
           </div>
           </div>
         </div>

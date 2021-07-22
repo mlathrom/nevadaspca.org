@@ -1,4 +1,4 @@
-dateModified: 1626320725
+dateModified: 1626915351
 email:
   fromEmail: mlathrom@gmail.com
   fromName: 'Nevada SPCA'
@@ -91,6 +91,7 @@ meta:
     b44caaff-8a05-40ee-bed1-2149c93b42e1: 'Address Line 2' # Address Line 2
     b83ad75f-4385-4657-bd13-379a5ae5ad78: 'Appointment Hours' # Appointment Hours
     b83fd3c0-8314-4d7f-980d-05fdcca2d737: Animals # Animals
+    b3858ff4-5145-4070-b54a-bc37ab84d4be: 'Feature Image' # Feature Image
     b5407dee-bcdd-404a-b772-43b3272bba34: Image # Image
     bb92e61e-e6c7-4ffe-9c72-f2da235ee6ac: Age # Age
     bde26dcb-ea4c-4c28-b080-80bf1913933b: 'Email Address' # Email Address
@@ -121,15 +122,6 @@ meta:
     fa0bc3d5-f34a-40ea-9aaa-c52694c07f4d: Subheading # Subheading
     fe08fc25-3a2b-4ebe-9208-6fc88ab0a419: Id # Id
 plugins:
-  feed-me:
-    edition: standard
-    enabled: true
-    schemaVersion: 4.3.0
-  formie:
-    edition: standard
-    enabled: true
-    licenseKey: 633DZ1C9EWNKVE7SL887MZPL
-    schemaVersion: 1.1.11
   guest-entries:
     edition: standard
     enabled: true

@@ -14,6 +14,7 @@ export default defineConfig({
       input: {
         app: './src/js/app.js',
         home: './src/js/pages/home.js',
+        'adopt-foster': './src/js/pages/adopt-foster.js',
       },
     },
   },

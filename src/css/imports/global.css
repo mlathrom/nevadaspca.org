@@ -11,6 +11,10 @@
   @apply absolute w-full h-full;
 }
 
+.img-box {
+  box-shadow: 12px 12px 0 0 #fff3e4;
+}
+
 @layer components {
   /*
    * Beam

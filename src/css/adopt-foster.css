@@ -1,0 +1,6 @@
+.animal.is-hidden {
+  @apply hidden;
+}
+.animal-toggle.is-active {
+  @apply bg-gradient-to-br from-indigo-500 to-indigo-300 text-white outline-none;
+}

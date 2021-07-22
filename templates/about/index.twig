@@ -1,9 +1,62 @@
 {# --------------------------------- #}
-{# About template
+{# About Page
 {# --------------------------------- #}
 
 {% extends '_layouts/default' %}
 
-{% block content %}
+{% block feature %}
+  <div class="bg-gradient-to-br from-brand-peach to-white md:flex md:flex-row-reverse">
+    <figure class="md:w-3/5 h-80 md:h-[480px] lg:h-[640px] 2xl:h-[720px]">
+      <img src="{{ entry.featureImage.one().getUrl() }}"
+        class="w-full h-full object-cover" />
+    </figure>
+    <aside class="p-8 md:w-2/5 flex items-center justify-center text-yellow-800">
+      <div class="text-center leading-relaxed max-w-md">
+        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mt-6">
+          About Us
+        </h2>
+        <hr class='w-20 mx-auto border-yellow-800 my-6 opacity-25'>
+        <p class="md:text-lg">
+          Nevada SPCA takes in over 2,000 dogs, cats, rabbits, and other small
+          pets annually. Our goal is to place each pet into a loving home.
+          Nevada SPCA is a non-profit and depends on supporters like you to help
+          us achieve our mission.
+        </p>
+      </div>
+    </aside>
+  </div>
+{% endblock %}
 
+{% block content %}
+  <div class="mx-auto w-full px-6 py-12 md:py-20">
+    <div class="max-w-md md:max-w-screen-xl mx-auto md:flex">
+      <div class="md:w-2/5 md:pr-16">
+        <img src="/img/cat-dog-white.jpg" alt="" class="rounded-lg border-2 border-brand-peach-dark w-full img-box">
+      </div>
+      <div class="md:w-3/5 mx-auto">
+        <div class="prose-lg md:prose-xl mt-6">
+          <h2 class="mt-0">
+            Our Story
+          </h2>
+          <p>
+            We are a 501 (c)(3) charitable non-profit organization that relies entirely on the generous donations of animal lovers like you  to make our lifesaving work possible. Our shelter does not receive funding from any large national SPCA, ASPCA, or any government agency; we are an independent non-profit serving Southern Nevada.
+          </p>
+          <p>
+            Nevada SPCA takes in over 2,000 dogs, cats, rabbits, and other small pets annually: treating each and every animal in our care as an individual with a name, identity, and unique personality. Our ultimate goal is to place them into loving homes where they can thrive, provide companionship, and maintain rewarding relationships with their human family.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gradient-to-br from-indigo-100 to-white">
+    <div class="mx-auto w-full max-w-screen-md p-8">
+      <div class="md:flex items-center md:space-x-8 text-center md:text-left">
+        <img src="/img/logo-duffield.png" alt="" class="w-64 inline-block" />
+        <p class="text-xl mt-4 md:mt-0">
+          Nevada SPCA is a proud recipient of funding from the Dave & Cheryl
+          Duffield Foundation!
+        </p>
+      </div>
+    </div>
+  </div>
 {% endblock %}

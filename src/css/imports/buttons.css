@@ -18,15 +18,31 @@
     }
   }
 
-  .button-green {
-    @apply button bg-brand-green text-white text-shadow;
+  .button-white {
+    @apply button bg-white text-black text-shadow text-lg;
   }
 
-  .button-pink {
-    @apply button bg-brand-pink text-white text-shadow;
+  .button-green {
+    @apply button bg-green-500 text-white text-shadow text-lg;
+  }
+
+  .button-yellow {
+    @apply button bg-yellow-300 text-white text-shadow text-lg;
+  }
+
+  .button-red {
+    @apply button bg-red-400 text-white text-shadow text-lg;
+  }
+
+  .button-red {
+    @apply button bg-red-400 text-white text-shadow text-lg;
+  }
+
+  .button-indigo {
+    @apply button bg-indigo-400 text-white text-shadow text-lg;
   }
 
   .button-black {
-    @apply button border-2 border-black text-shadow;
+    @apply button border-2 border-black text-lg;
   }
 }

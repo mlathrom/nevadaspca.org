@@ -9,7 +9,7 @@
           </svg>
         </a>
         <div class="flex-grow">
-          <a href="{{ url('/') }}" class="inline-block w-36 md:w-48">
+          <a href="{{ url('/') }}" class="inline-block w-36 md:w-52">
             <span class="responsive-obj pb-[31.22%]">
               <svg>
                 <title>
@@ -27,47 +27,41 @@
         </button>
       </div>
       <div class="nav-mobile transition-all duration-300 ease-out overflow-hidden md:contents md:h-auto md:opacity-1">
-        <nav class="site-header-nav text-lg font-bold text-center py-4 md:py-0 md:text-base md:border-t md:border-gray-200">
+        <nav class="site-header-nav text-lg font-bold text-center py-4 md:py-0 md:border-t md:border-gray-200">
           <ul class="md:flex justify-center">
             <li>
               <a href="{{ url('adopt-foster') }}"
-                class="p-2 md:h-11 inline-flex items-center md:px-6">
+                class="p-2 md:h-11 inline-flex items-center md:px-4 lg:px-6">
                 <span class="beam">Adopt & Foster</span>
               </a>
             </li>
             <li>
               <a href="{{ url('support') }}"
-                class="p-2 md:h-11 inline-flex items-center md:px-6">
-                <span class="beam">Support</span>
+                class="p-2 md:h-11 inline-flex items-center md:px-4 lg:px-6">
+                <span class="beam">Get Involved</span>
+              </a>
+            </li>
+            <li>
+              <a href="{{ url('about') }}"
+                class="p-2 md:h-11 inline-flex md:items-center md:px-4 lg:px-6">
+                <span class="beam">About Us</span>
               </a>
             </li>
             <li>
               <a href="{{ url('articles') }}"
-                class="p-2 md:h-11 inline-flex items-center md:px-6">
+                class="p-2 md:h-11 inline-flex items-center md:px-4 lg:px-6">
                 <span class="beam">Articles</span>
               </a>
             </li>
             <li>
               <a href="{{ url('events') }}"
-                class="p-2 md:h-11 inline-flex items-center md:px-6">
+                class="p-2 md:h-11 inline-flex items-center md:px-4 lg:px-6">
                 <span class="beam">Events</span>
               </a>
             </li>
             <li>
-              <a href="{{ url('about') }}"
-                class="p-2 md:h-11 inline-flex md:items-center md:px-6">
-                <span class="beam">About</span>
-              </a>
-            </li>
-            <li>
-              <a href="{{ url('contact') }}"
-                class="p-2 md:h-11 inline-flex items-center md:px-6">
-                <span class="beam">Contact</span>
-              </a>
-            </li>
-            <li class="md:border-l md:border-gray-200">
               <a href="{{ url('shop') }}"
-                class="p-2 md:h-11 inline-flex items-center space-x-2 md:px-6">
+                class="p-2 md:h-11 inline-flex items-center space-x-2 md:px-4 lg:px-6">
                 <svg class="w-5 h-5 -mt-1">
                   <use xlink:href="#icon-cart" />
                 </svg>
@@ -103,13 +97,13 @@
         </div>
         <div class="site-header-action p-6 md:p-4">
           <div class="space-y-4 md:flex md:justify-end md:space-y-0 md:space-x-2 md:flex-wrap">
-            <a href="{{ url('doante') }}"
-              class="button-green mx-auto w-full max-w-xs md:w-auto md:mx-0">
-              Donate
-            </a>
             <a href="{{ url('adopt-foster') }}"
-              class="button-pink mx-auto w-full max-w-xs md:w-auto md:mx-0">
+              class="button-black mx-auto w-full max-w-xs md:w-auto md:mx-0 hidden lg:inline-flex">
               Adopt & Foster
+            </a>
+            <a href="{{ url('doante') }}"
+              class="button-red mx-auto w-full max-w-xs md:w-auto md:mx-0">
+              Donate
             </a>
           </div>
         </div>

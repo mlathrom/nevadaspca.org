@@ -1,13 +1,58 @@
 {# --------------------------------- #}
-{# Home template
-{# --------------------------------- #}
-
-{# --------------------------------- #}
 {# Home Page
 {# --------------------------------- #}
 
 {% extends '_layouts/default' %}
 
-{% block content %}
+{% block feature %}
+  <div class="bg-gradient-to-br from-green-200 to-white text-green-800 md:flex md:flex-row-reverse">
+    <figure class="md:w-3/5 h-80 md:h-[480px] lg:h-[640px] 2xl:h-[720px]">
+      <img src="{{ entry.featureImage.one().getUrl() }}"
+        class="w-full h-full object-cover" />
+    </figure>
+    <aside class="p-8 md:w-2/5 flex items-center justify-center">
+      <div class="text-center leading-relaxed max-w-md">
+        <svg class="w-8 h-8 text-indigo-400 inline-block">
+          <use xlink:href="#icon-heart" />
+        </svg>
+        <h2 class="text-2xl md:text-3xl 2xl:text-4xl font-bold mt-6">
+          Find your new best friend
+        </h2>
+        <p class="mt-6 md:text-lg">
+          We are dedicated to bringing pets and people together by finding them
+          loving new homes and inspiring a more humane community.
+        </p>
+        <a href="{{ url('adopt') }}" class="button-indigo inline-flex mt-6">
+          View Available Pets
+        </a>
+      </div>
+    </aside>
+  </div>
+{% endblock %}
 
+{% block content %}
+  <div class="mx-auto w-full px-4 py-12 md:py-20 bg-white">
+    <div class="mt-10 max-w-screen-md mx-auto text-center prose-xl">
+      <h2>
+        Fostering Companionship since 1982
+      </h2>
+      <p>
+        Nevada SPCA has been saves the lives of Southern Nevada’s most
+        vulnerable pets. Through our works, we hope to inspire human companions
+        to uphold the best possible care, while increasing the human-animal bond
+        through adoption, foster and preventative care.
+      </p>
+    </div>
+  </div>
+  <div class="bg-gradient-to-br from-indigo-100 to-white">
+    <div class="mx-auto w-full max-w-screen-md p-8">
+      <div class="flex items-center space-x-8">
+        <img src="/img/logo-duffield.png" alt="" class="w-64" />
+        <p class="text-xl">
+          Nevada SPCA is a proud recipient of funding from the Dave & Cheryl
+          Duffield Foundation!
+        </p>
+      </div>
+    </div>
+  </div>
 {% endblock %}

@@ -57,3 +57,6 @@ output.json
 
 # dist
 web/dist
+
+# cpanel
+.cpanel.yml

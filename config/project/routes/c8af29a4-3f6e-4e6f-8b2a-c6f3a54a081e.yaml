@@ -1,0 +1,9 @@
+siteUid: null
+sortOrder: 2
+template: animal/_entry.twig
+uriParts:
+  - adopt-foster/animal/
+  -
+    - slug
+    - '[^\/]+'
+uriPattern: 'adopt-foster/animal/<slug:[^\/]+>'

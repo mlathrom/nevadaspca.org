@@ -82,9 +82,13 @@
     <div class="site-container notch-l notch pt-16 md:pt-0 flex flex-col min-h-screen bg-white">
       {% include "_partials/header" %}
       <main class="site-main flex-grow" role="main">
-        {% block content %}
-          <p>Insert Content</p>
+        
+        {% block feature %}
         {% endblock %}
+        
+        {% block content %}
+        {% endblock %}
+        
       </main>
       {% include "_partials/footer" %}
     </div>
