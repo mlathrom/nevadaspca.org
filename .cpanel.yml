@@ -7,8 +7,8 @@ deployment:
     - /bin/npm install
     - /bin/npm run build
     - export DEPLOYPATH=/home/br1hiswk5mtf/websites/nevadaspca.org
-    - /bin/cp -TR $DEPLOYPATH/vendor
-    - /bin/cp -TR $DEPLOYPATH/node_modules
-    - /bin/cp -TR $DEPLOYPATH/config
-    - /bin/cp -TR $DEPLOYPATH/templates
-    - /bin/cp -R $DEPLOYPATH/web
+    - /bin/cp vendor -TR $DEPLOYPATH
+    - /bin/cp node_modules -TR $DEPLOYPATH
+    - /bin/cp config -TR $DEPLOYPATH/config
+    - /bin/cp templates -TR $DEPLOYPATH
+    - /bin/cp web -R $DEPLOYPATH
