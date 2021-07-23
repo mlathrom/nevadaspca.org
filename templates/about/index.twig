@@ -5,14 +5,14 @@
 {% extends '_layouts/default' %}
 
 {% block feature %}
-  <div class="bg-gradient-to-br from-brand-peach to-white md:flex md:flex-row-reverse">
+  <div class="bg-gradient-to-br from-brand-peach-dark to-white md:flex md:flex-row-reverse">
     <figure class="md:w-3/5 h-80 md:h-[480px] lg:h-[640px] 2xl:h-[720px]">
-      <img src="{{ entry.featureImage.one().getUrl() }}"
+      <img src="{{ entry.heroImage.one().getUrl() }}"
         class="w-full h-full object-cover" />
     </figure>
     <aside class="p-8 md:w-2/5 flex items-center justify-center text-yellow-800">
       <div class="text-center leading-relaxed max-w-md">
-        <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mt-6">
+        <h2 class="text-4xl lg:text-5xl font-bold">
           About Us
         </h2>
         <hr class='w-20 mx-auto border-yellow-800 my-6 opacity-25'>
@@ -45,17 +45,6 @@
             Nevada SPCA takes in over 2,000 dogs, cats, rabbits, and other small pets annually: treating each and every animal in our care as an individual with a name, identity, and unique personality. Our ultimate goal is to place them into loving homes where they can thrive, provide companionship, and maintain rewarding relationships with their human family.
           </p>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="bg-gradient-to-br from-indigo-100 to-white">
-    <div class="mx-auto w-full max-w-screen-md p-8">
-      <div class="md:flex items-center md:space-x-8 text-center md:text-left">
-        <img src="/img/logo-duffield.png" alt="" class="w-64 inline-block" />
-        <p class="text-xl mt-4 md:mt-0">
-          Nevada SPCA is a proud recipient of funding from the Dave & Cheryl
-          Duffield Foundation!
-        </p>
       </div>
     </div>
   </div>

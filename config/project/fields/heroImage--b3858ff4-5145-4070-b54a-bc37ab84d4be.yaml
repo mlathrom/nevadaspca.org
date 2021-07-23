@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: fa0ada94-3ad1-41b9-8463-7b4a41f9fe27 # Animals
-handle: featureImage
+handle: heroImage
 instructions: ''
-name: 'Feature Image'
+name: 'Hero Image'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -20,7 +20,7 @@ settings:
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:d3280cf9-f4d9-4ff5-b08a-c6487b9680b4' # General
+  singleUploadLocationSource: 'volume:d3280cf9-f4d9-4ff5-b08a-c6487b9680b4' # Images
   singleUploadLocationSubpath: ''
   source: null
   sources: '*'

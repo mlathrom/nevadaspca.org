@@ -1,29 +1,28 @@
+columnSuffix: null
 contentColumnType: string
-fieldGroup: 7b386fd3-3446-443b-a78e-7ccbab721caf # Common
-handle: eventFeatureImage
+fieldGroup: 5cb2b1e0-521d-4292-b1d0-e5aac1a6bf49 # Articles
+handle: articleHeroImage
 instructions: ''
-name: 'Event Feature Image'
+name: 'Article Hero Image'
 searchable: false
 settings:
   allowSelfRelations: false
   allowUploads: true
-  allowedKinds:
-    - image
-  defaultUploadLocationSource: 'volume:cb909f1c-de9f-40e8-aef1-87699e1a5b6d' # Events
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:4913dc1f-7ce0-4bcf-ad84-f3c59407d40a' # Articles
   defaultUploadLocationSubpath: img
   limit: '1'
   localizeRelations: false
   previewMode: full
-  restrictFiles: '1'
+  restrictFiles: ''
   selectionLabel: 'Add an image'
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:cb909f1c-de9f-40e8-aef1-87699e1a5b6d' # Events
+  singleUploadLocationSource: 'volume:4913dc1f-7ce0-4bcf-ad84-f3c59407d40a' # Articles
   singleUploadLocationSubpath: img
   source: null
-  sources:
-    - 'volume:cb909f1c-de9f-40e8-aef1-87699e1a5b6d' # Events
+  sources: '*'
   targetSiteId: null
   useSingleFolder: true
   validateRelatedElements: false

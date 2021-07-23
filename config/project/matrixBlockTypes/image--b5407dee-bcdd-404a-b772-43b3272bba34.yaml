@@ -57,7 +57,7 @@ fields:
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
-      singleUploadLocationSource: 'volume:d3280cf9-f4d9-4ff5-b08a-c6487b9680b4' # General
+      singleUploadLocationSource: 'volume:d3280cf9-f4d9-4ff5-b08a-c6487b9680b4' # Images
       singleUploadLocationSubpath: img
       source: null
       sources: '*'

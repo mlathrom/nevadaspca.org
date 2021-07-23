@@ -1,0 +1,34 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 7b386fd3-3446-443b-a78e-7ccbab721caf # Common
+handle: eventHeroImage
+instructions: ''
+name: 'Event Hero Image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:cb909f1c-de9f-40e8-aef1-87699e1a5b6d' # Events
+  defaultUploadLocationSubpath: img
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: 'Add an image'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:cb909f1c-de9f-40e8-aef1-87699e1a5b6d' # Events
+  singleUploadLocationSubpath: img
+  source: null
+  sources:
+    - 'volume:cb909f1c-de9f-40e8-aef1-87699e1a5b6d' # Events
+  targetSiteId: null
+  useSingleFolder: true
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

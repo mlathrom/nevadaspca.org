@@ -1,4 +1,4 @@
-dateModified: 1626915351
+dateModified: 1627010545
 email:
   fromEmail: mlathrom@gmail.com
   fromName: 'Nevada SPCA'
@@ -11,6 +11,7 @@ meta:
     0f0a9b9a-95fb-4983-921e-3fca76bfafe4: Sunday # Sunday
     1b0560d0-40f3-4228-87f8-9c26c8d77ef9: 'Contact Form' # Contact Form
     1cd9d1e6-f20a-480d-9589-82bcb2a52e6a: Support # Support
+    1f05c425-2773-4f10-a639-0ca77a93422c: Team # Team
     2af78d6d-f32b-4d2d-af36-3eec5d1ee63e: Monday # Monday
     2c4fab66-67aa-428f-b322-626a73fa3fc1: Articles # Articles
     2dabeaa4-7f4b-4bee-ba0c-dbcfcc71fb30: Heading # Heading
@@ -36,7 +37,7 @@ meta:
     8b871c9a-c0ed-408e-8ae7-203687a8dee8: 'Last Name' # Last Name
     8ce347be-2a45-4acd-b0b2-42339ed25250: People # People
     9ad03f33-66d7-421a-859f-8e7469d01312: Image # Image
-    9de60738-c953-48d7-ba61-e75afc5de5cb: 'Event Feature Image' # Event Feature Image
+    9de60738-c953-48d7-ba61-e75afc5de5cb: 'Event Hero Image' # Event Hero Image
     22e34aaa-d6db-4ea4-b6d2-1caf23512467: Twitter # Twitter
     33cc23e5-4779-4efd-b2c7-8ff6a0893b3c: 'Article Content' # Article Content
     46d36c04-c073-43f8-8b40-c49afa54256b: 'Operation Hours' # Operation Hours
@@ -61,8 +62,9 @@ meta:
     426e9c70-7fce-47a8-b383-024f2e18d4f1: Donate # Donate
     432d950f-d1f7-4357-8cc3-6cf2a1c614d3: Thursday # Thursday
     483b8056-5bca-4826-b935-bb73bf760856: Profile # Profile
+    532b1c8e-4ba4-4d51-b35c-7a9d3ee9ac33: Biography # Biography
     0575ea3d-2700-4d9f-96b9-1f1e313c3cd8: Tuesday # Tuesday
-    707df1a0-6dbf-4974-a793-568e2003c826: 'Article Feature Image' # Article Feature Image
+    707df1a0-6dbf-4974-a793-568e2003c826: 'Article Hero Image' # Article Hero Image
     776b316a-f531-4e22-95f0-04bc23165574: Subject # Subject
     822b9f6f-6e0e-47db-8f56-a0e8cd29d422: 'Company Info' # Company Info
     933bf7e4-2ea0-4b12-95e3-8b9b2c6ba1b0: Text # Text
@@ -87,23 +89,26 @@ meta:
     a19d360f-8cd8-4437-8c62-8b2bd0a990b1: New # New
     a146bb18-829c-4a76-902b-8ddc6499abb6: Default # Default
     aa260b18-36c5-4858-802d-a5a7be63ae60: Tags # Tags
+    ac2c126e-2ea5-415f-82fe-c2ab10eb5cb0: Default # Default
+    af386b63-f654-4cbc-bc64-7b37c753f654: Portrait # Portrait
     b4b9f62c-4ea3-4d5e-af75-a194afa42115: Wednesday # Wednesday
     b44caaff-8a05-40ee-bed1-2149c93b42e1: 'Address Line 2' # Address Line 2
     b83ad75f-4385-4657-bd13-379a5ae5ad78: 'Appointment Hours' # Appointment Hours
     b83fd3c0-8314-4d7f-980d-05fdcca2d737: Animals # Animals
-    b3858ff4-5145-4070-b54a-bc37ab84d4be: 'Feature Image' # Feature Image
+    b3858ff4-5145-4070-b54a-bc37ab84d4be: 'Hero Image' # Hero Image
     b5407dee-bcdd-404a-b772-43b3272bba34: Image # Image
     bb92e61e-e6c7-4ffe-9c72-f2da235ee6ac: Age # Age
     bde26dcb-ea4c-4c28-b080-80bf1913933b: 'Email Address' # Email Address
     be72df5e-4b83-4d84-b617-a06fce90bd68: Message # Message
     bff3f469-d94b-4f4b-a707-7f7ac7be44cb: Facebook # Facebook
+    c0eb46b3-9f53-4c56-963d-7245bd4a257c: 'Job Title' # Job Title
     c2a110e9-a17f-4af1-be6d-ff057ec72fc2: 'Profile Url' # Profile Url
     c37d56bf-2c6d-4dc5-9f3c-43132184ea47: 'Adopt & Foster' # Adopt & Foster
     c82d3ecb-0686-421b-8e68-b8d91588206c: Caption # Caption
     cb909f1c-de9f-40e8-aef1-87699e1a5b6d: Events # Events
     cf9e0bc5-1e95-4591-a31d-6ead99570f9d: Support # Support
     d1cc1039-ebc5-4242-87fe-de37c05297bb: 'Nevada SPCA' # Nevada SPCA
-    d3280cf9-f4d9-4ff5-b08a-c6487b9680b4: General # General
+    d3280cf9-f4d9-4ff5-b08a-c6487b9680b4: Images # Images
     db60e7b7-992d-42f4-8caa-b1aa8c09c4fa: Social # Social
     dc6aa9bb-c153-42ed-a7b0-05fe9c41170c: Events # Events
     dc527bab-98c1-4d74-bc57-e54e44df20ae: About # About

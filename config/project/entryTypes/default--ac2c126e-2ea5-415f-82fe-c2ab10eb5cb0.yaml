@@ -1,5 +1,5 @@
 fieldLayouts:
-  c6685f92-6c30-492b-b136-4a7b57c10a38:
+  6f408e99-3205-4da5-9db9-45d6c0ce13e6:
     tabs:
       -
         elements:
@@ -27,7 +27,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 6eb572a0-bb4d-4301-9c9a-9ae3b957e9eb # Article Summary
+            fieldUid: af386b63-f654-4cbc-bc64-7b37c753f654 # Portrait
             instructions: null
             label: null
             required: false
@@ -36,7 +36,25 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 707df1a0-6dbf-4974-a793-568e2003c826 # Article Hero Image
+            fieldUid: 6b819135-78a9-44ad-bcb7-c0967fec06ff # First Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 8b871c9a-c0ed-408e-8ae7-203687a8dee8 # Last Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: c0eb46b3-9f53-4c56-963d-7245bd4a257c # Job Title
             instructions: null
             label: null
             required: false
@@ -45,9 +63,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            type: craft\fieldlayoutelements\HorizontalRule
-          -
-            fieldUid: 33cc23e5-4779-4efd-b2c7-8ff6a0893b3c # Article Content
+            fieldUid: 532b1c8e-4ba4-4d51-b35c-7a9d3ee9ac33 # Biography
             instructions: null
             label: null
             required: false
@@ -58,10 +74,10 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 handle: default
-hasTitleField: true
+hasTitleField: false
 name: Default
-section: 2c4fab66-67aa-428f-b322-626a73fa3fc1 # Articles
+section: 1f05c425-2773-4f10-a639-0ca77a93422c # Team
 sortOrder: 1
-titleFormat: null
+titleFormat: '{firstName} {lastName}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

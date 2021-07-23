@@ -25,9 +25,9 @@
           {% for entry in articles %}
             <article class="sm:w-1/2 sm:p-2 sm:flex sm:flex-col xl:p-4">
               <div class="bg-brown-50 shadow p-4 md:p-6 rounded sm:flex-grow sm:flex sm:flex-col">
-                {% set featureImage = entry.articleFeatureImage.one() %}
+                {% set heroImage = entry.articleheroImage.one() %}
                 <a href="{{ entry.url }}" class="pb-4 md:pb-6 block">
-                  <img src="{{ featureImage.url }}" alt="" class="rounded" />
+                  <img src="{{ heroImage.url }}" alt="" class="rounded" />
                 </a>
                 <div class="text-gray-500 sm:flex-grow sm:flex sm:flex-col">
                   <h2 class="font-bold text-gray-700 text-lg md:text-xl lg:text-2xl">

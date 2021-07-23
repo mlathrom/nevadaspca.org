@@ -7,7 +7,7 @@
 {% set animal = craft.shelterManager.animals()|filter (v => v.id == slug)|first %}
 
 {% block feature %}
-  <div class="bg-gradient-to-br from-green-100 to-white relative py-4 md:py-8 px-4">
+  <div class="bg-gradient-to-br from-brand-peach-dark to-white relative py-4 md:py-8 px-4">
     <div class="max-w-screen-xl md:flex items-center justify-center inset-0 mx-auto">
       <div class="w-full md:w-96 flex-shrink-0 self-start">
         <div class="w-full h-0 pb-[85%] relative">
@@ -17,9 +17,9 @@
               class="absolute top-0 left-0 h-full w-full object-cover rounded-lg block" />
           {% endif %}
         </div>
-      </div>
+      </div> 
       <div class="md:pl-10 text-green-800 flex-grow mt-8 md:mt-0">
-        <h1 class="font-bold text-4xl md:text-6xl">{{ animal.name }} <small class="text-3xl opacity-40"> {{ animal.species }}</small></h1>
+        <h1 class="font-bold text-3xl md:text-5xl">{{ animal.name }} <small class="text-3xl opacity-40"> {{ animal.species }}</small></h1>
         <p class="mt-4 md:mt-6 leading-relaxed">
           {{ animal.comments }}
         </p>

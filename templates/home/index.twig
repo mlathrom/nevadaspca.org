@@ -5,9 +5,9 @@
 {% extends '_layouts/default' %}
 
 {% block feature %}
-  <div class="bg-gradient-to-br from-green-200 to-white text-green-800 md:flex md:flex-row-reverse">
+  <div class="bg-gradient-to-br from-brand-peach-dark to-white text-green-800 md:flex md:flex-row-reverse">
     <figure class="md:w-3/5 h-80 md:h-[480px] lg:h-[640px] 2xl:h-[720px]">
-      <img src="{{ entry.featureImage.one().getUrl() }}"
+      <img src="{{ entry.heroImage.one().getUrl() }}"
         class="w-full h-full object-cover" />
     </figure>
     <aside class="p-8 md:w-2/5 flex items-center justify-center">
@@ -31,7 +31,7 @@
 {% endblock %}
 
 {% block content %}
-  <div class="mx-auto w-full px-4 py-12 md:py-20 bg-white">
+  <div class="mx-auto w-full px-4 py-12 md:py-20">
     <div class="mt-10 max-w-screen-md mx-auto text-center prose-xl">
       <h2>
         Fostering Companionship since 1982

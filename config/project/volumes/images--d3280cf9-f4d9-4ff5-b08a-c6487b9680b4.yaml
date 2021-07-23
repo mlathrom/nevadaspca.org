@@ -28,13 +28,13 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-handle: general
+handle: images
 hasUrls: true
-name: General
+name: Images
 settings:
-  path: '@webroot/assets/general'
+  path: '@webroot/assets/images'
 sortOrder: 4
 titleTranslationKeyFormat: null
 titleTranslationMethod: null
 type: craft\volumes\Local
-url: '@web/assets/general'
+url: '@web/assets/images'
